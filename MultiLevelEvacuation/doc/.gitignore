@@ -1,0 +1,8 @@
+
+#generated files by pdflatex
+*.aux
+*.log
+*.toc
+/report.pdf
+
+/report.synctex.gz

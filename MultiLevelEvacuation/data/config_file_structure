@@ -1,0 +1,66 @@
+## configuration file structure
+# this file describes how a configuration file must look like
+
+general
+-------
+<key> = <value>			Note that the spaces are needed!
+floors are numbered from 1 to floor_count, 1 is the ground floor
+
+
+config file
+-----------
+
+
+agents_per_floor = <agents>					number of agents per floor
+agents_radius_min = <min_radius>
+agents_radius_max = <max_radius>			radius of each agent in meters
+											values are uniformaly distributed between
+											min and max
+
+meter_per_pixel = <scale>					scaling to convert meters <--> pixels
+											value in meters = pixels * meter_per_pixel
+
+save_frames = <0/1>							whether to save each frame into
+											folder frames
+
+frame_basename = <basename of saved frames> name of the saved frames (if save_frames = 1)
+                                            frame number is appended at the end
+
+floor_count = <num of floors>
+floor_<i>_build = some_image.png			building image for floor i
+											i in [1,floor_count]
+
+TODO: Update variables and formulas based on papaer: Escape Panic Helbling 2000
+
+dt = <timestep>                             simulation timestep in seconds
+duration = <duration>                       simulation duration in seconds
+
+tau = <see article 'Simulating dynamical features of escape panic'>
+A = <see article 'Simulating dynamical features of escape panic'>
+B = <see article 'Simulating dynamical features of escape panic'>
+k = <see article 'Simulating dynamical features of escape panic'>
+kappa = <see article 'Simulating dynamical features of escape panic'>
+
+r_min = <minimum radius of an agent, see article 'Simulating dynamical features of escape panic' for details>
+r_max = <maximum radius of an agent, see article 'Simulating dynamical features of escape panic' for details>
+v0 = <desired speed, see article 'Simulating dynamical features of escape panic' for details>
+v_max = <maximum velocity of an agent, see article 'Simulating dynamical features of escape panic' for details>
+m = <mass of an agent, see article 'Simulating dynamical features of escape panic' for details>
+
+images
+------
+image format should be png, but can also be something else
+image must have 3 channels (RGB) and 8 bits/channel, all images must have the
+same dimensions
+
+building image:
+ how the building looks like and where the agents are
+ - background (ignored)						white   #ffffff
+ - walls 									black   #000000
+ - agent spawning areas						pink    #ff00ff 
+ - exits									green   #00ff00
+ - stairs down								blue    #0000ff
+ - stairs up								red		#ff0000
+ stairs: for each down stairs spot (connected color) there must be an up stairs
+ at the same spot on the floor below. this allows multiple stairs per floor.
+
