@@ -1,3 +1,7 @@
+%% Sample the next generation of room structures, variate them using random noise,
+% and new room structures to images
+
+
 function nextGeneration(fitness,N_children)
 
 

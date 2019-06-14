@@ -1,3 +1,5 @@
+%% add the force from boundary to the total force, which is stored in data.floor.agents.f
+
 function data = addWallForce(data)
 %ADDWALLFORCE adds wall's force contribution to each agent
 

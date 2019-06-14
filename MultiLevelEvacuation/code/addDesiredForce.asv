@@ -1,4 +1,4 @@
-%% add the desired force from agents to the total force, which is stored in data.floor.agents.f
+%% add the desired force from 
 
 function data = addDesiredForce(data)
 %ADDDESIREDFORCE add 'desired' force contribution (towards nearest exit or

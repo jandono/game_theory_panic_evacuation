@@ -1,3 +1,6 @@
+%% The main function. The pipeline of running evolutionary algorithm with N_it iterations and N_children
+% different copies
+
 N_it = 2;
 N_children = 3;
 

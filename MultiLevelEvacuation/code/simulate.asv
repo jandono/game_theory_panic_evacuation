@@ -1,8 +1,7 @@
 %% taking filename as input and output the average efficiency metric(the fitness function for the room structure)
 % The filename corresponds to a config file recording the parameters and
 % image of room structure.
-%line 49-59(added code): calculate the metric of efficiency using
-%individual position and velocity
+%line 49-
 
 
 function avg_effic = simulate(config_file)
@@ -50,11 +49,10 @@ while (data.time < data.duration)
     %% WE CHANGED THIS
     % print mean/median velocity of agents on each floor
      for fi = 1:data.floor_count
-         % calculate the efficiency metric at this specific timestep
+         %avgv = arrayfun(@(agent) norm(agent.v), data.floor(fi).agents);
          effic = arrayfun(@(agent) agent.v*...
          [lerp2(data.floor(fi).img_dir_x, agent.p(1), agent.p(2)) lerp2(data.floor(fi).img_dir_y, agent.p(1), agent.p(2))]'/agent.v0...
          , data.floor(fi).agents);
-           % we need to average the efficiency over time finally.
          avg_effic = avg_effic + mean(effic); 
      end
      timesteps = timesteps + 1;
