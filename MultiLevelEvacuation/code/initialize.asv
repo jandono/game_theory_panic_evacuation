@@ -1,5 +1,5 @@
 %%the data structure includes parameters from the configure file, the image
-% for room structure and the information for each agent(for example, position,velocity,force)
+% for each floor and the for 
 
 function data = initialize(config)
 % initialize the internal data from the config data

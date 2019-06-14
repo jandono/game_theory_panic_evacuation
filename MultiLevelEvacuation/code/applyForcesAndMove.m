@@ -1,6 +1,8 @@
-function data = applyForcesAndMove(data)
 %APPLYFORCESANDMOVE apply current forces to agents and move them using
 %the timestep and current velocity
+
+function data = applyForcesAndMove(data)
+
 
 n_velocity_clamps = 0;
 

@@ -1,4 +1,4 @@
- 
+//extracting the desired direction e from the position and velocity for given agent 
 #include <mex.h>
 
 void mexFunction(int nlhs, mxArray *plhs[], int nrhs, const mxArray *prhs[])
