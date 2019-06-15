@@ -8,7 +8,8 @@
 function avg_effic = simulate(config_file)
 % run this to start the simulation
 
-if nargin==0
+% if no config_file provided -> use the default one
+if nargin==0 
     config_file='../data/config1.conf';
 end
 

@@ -15,14 +15,14 @@ void mexFunction(int nlhs, mxArray *plhs[], int nrhs, const mxArray *prhs[])
     if (nrhs != 3)
         mexErrMsgTxt("Exactly three input arguments needed.");
     
-    m = mxGetM(prhs[0]);
-    n = mxGetN(prhs[0]);
-    data = mxGetPr(prhs[0]);
+    m = mxGetM(prhs[0]); // number of rows of 2-D array
+    n = mxGetN(prhs[0]); // number of columns of 2-D array
+    data = mxGetPr(prhs[0]); // pointer to data
     x = *mxGetPr(prhs[1]) - 1;
     y = *mxGetPr(prhs[2]) - 1;
     
-    plhs[0] = mxCreateDoubleMatrix(1, 1, mxREAL);
-    out = mxGetPr(plhs[0]);
+    plhs[0] = mxCreateDoubleMatrix(1, 1, mxREAL); // make output matrix
+    out = mxGetPr(plhs[0]); // pointer to output matrix
     
     x = x < 0 ? 0 : x > m - 1 ? m - 1 : x;
     y = y < 0 ? 0 : y > n - 1 ? n - 1 : y;

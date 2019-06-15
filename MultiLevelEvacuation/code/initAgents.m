@@ -5,11 +5,11 @@ function data = initAgents(data)
 
 
 function radius = getAgentRadius()
-    %radius of an agent in meters
+    % radius of an agent in meters, randomly chosen for each agent
     radius = data.r_min + (data.r_max-data.r_min)*rand();
 end
 
-data.agents_exited = 0; %how many agents have reached the exit
+data.agents_exited = 0; % how many agents have reached the exit
 data.total_agent_count = 0;
 
 floors_with_agents = 0;
