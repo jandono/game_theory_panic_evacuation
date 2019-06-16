@@ -14,7 +14,7 @@ end
 axis([0 data.duration 0 data.total_agent_count]);
 
 hold on;
-plot(data.time, length(data.floor(floor_idx).agents), 'x');
+plot(data.time, length(data.floor(floor_idx).agents), 'b*');
 hold off;
 
 title(sprintf('agents on floor %i', floor_idx));
