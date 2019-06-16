@@ -29,6 +29,11 @@ for i=1:data.floor_count
             data.floor(i).agents(cur_agent).f = [0, 0];
             data.floor(i).agents(cur_agent).m = data.m;
             data.floor(i).agents(cur_agent).v0 = data.v0;
+            if rand < data.cooperation_prob % 0:defecting, 1: cooperating, prob 0.5
+                data.floor(i).agents(cur_agent).coop = 1; 
+            else
+                data.floor(i).agents(cur_agent).coop = 0;
+            end
             
             tries = 10;
             while tries > 0

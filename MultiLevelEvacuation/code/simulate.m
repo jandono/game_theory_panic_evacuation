@@ -25,35 +25,37 @@ fprintf('Start simulation...\n');
 
 avg_effic = 0;
 timesteps = 0;
+cnt = 0;
 
 while (data.time < data.duration)
+    cnt = cnt + 1;
     tstart=tic;
     data = addDesiredForce(data);
     data = addWallForce(data);
     data = addAgentRepulsiveForce(data);
     data = applyForcesAndMove(data);
     
-    % do the plotting
-    set(0,'CurrentFigure',data.figure_floors);
-    for floor=1:data.floor_count
-        plotAgentsPerFloor(data, floor);
-        plotFloor(data, floor);
+    if mod(cnt, data.plotting_freq) == 0
+        % do the plotting
+        set(0,'CurrentFigure',data.figure_floors);
+        for floor=1:data.floor_count
+            plotAgentsPerFloor(data, floor);
+            plotFloor(data, floor);
+        end
+        if data.save_frames==1
+            print('-depsc2',sprintf('frames/%s_%04i.eps', ...
+                data.frame_basename,frame), data.figure_floors);
+        end
+        set(0,'CurrentFigure',data.figure_exit);
+        plotExitedAgents(data);
     end
-    if data.save_frames==1
-        print('-depsc2',sprintf('frames/%s_%04i.eps', ...
-            data.frame_basename,frame), data.figure_floors);
-    end
-    
-    set(0,'CurrentFigure',data.figure_exit);
-    plotExitedAgents(data);
-    
     
     %% WE CHANGED THIS
     % print mean/median velocity of agents on each floor
      for fi = 1:data.floor_count
          % calculate the efficiency metric at this specific timestep
          effic = arrayfun(@(agent) agent.v*...
-         [lerp2(data.floor(fi).img_dir_x, agent.p(1), agent.p(2)) lerp2(data.floor(fi).img_dir_y, agent.p(1), agent.p(2))]'/agent.v0...
+         [lerp2(data.floor(fi).img_dir_x_coop, agent.p(1), agent.p(2)) lerp2(data.floor(fi).img_dir_y_coop, agent.p(1), agent.p(2))]'/agent.v0...
          , data.floor(fi).agents);
            % we need to average the efficiency over time finally.
          avg_effic = avg_effic + mean(effic); 

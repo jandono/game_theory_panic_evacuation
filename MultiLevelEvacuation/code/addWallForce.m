@@ -11,17 +11,25 @@ for fi = 1:data.floor_count
         ri = data.floor(fi).agents(ai).r;
         vi = data.floor(fi).agents(ai).v;
         
-        % get direction from nearest wall to agent
-        nx = lerp2(data.floor(fi).img_wall_dist_grad_x, p(1), p(2));
-        ny = lerp2(data.floor(fi).img_wall_dist_grad_y, p(1), p(2));
-        
-        % get distance to nearest wall
-        diW = lerp2(data.floor(fi).img_wall_dist, p(1), p(2));
+        if data.floor(fi).agents(ai).coop == 1
+            % get direction from nearest wall to agent
+            nx = lerp2(data.floor(fi).img_wall_dist_grad_x_coop, p(1), p(2));
+            ny = lerp2(data.floor(fi).img_wall_dist_grad_y_coop, p(1), p(2));
+
+            % get distance to nearest wall
+            diW = lerp2(data.floor(fi).img_wall_dist_coop, p(1), p(2));
+        else
+            % get direction from nearest wall to agent
+            nx = lerp2(data.floor(fi).img_wall_dist_grad_x, p(1), p(2));
+            ny = lerp2(data.floor(fi).img_wall_dist_grad_y, p(1), p(2));
+
+            % get distance to nearest wall
+            diW = lerp2(data.floor(fi).img_wall_dist, p(1), p(2));
+        end
         
         % get perpendicular and tangential unit vectors
         niW = [ nx ny];
         tiW = [-ny nx];
-        
         
         % calculate force
         if diW < ri

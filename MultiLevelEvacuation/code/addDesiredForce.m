@@ -15,16 +15,27 @@ for fi = 1:data.floor_count
         v = data.floor(fi).agents(ai).v;
         
         
+        
         % get direction towards nearest exit
         ex = lerp2(data.floor(fi).img_dir_x, p(1), p(2));
         ey = lerp2(data.floor(fi).img_dir_y, p(1), p(2));
         e = [ex ey];
         
-        % get force
+        % get direction towards nearest exit if cooperating
+        ex_coop = lerp2(data.floor(fi).img_dir_x_coop, p(1), p(2));
+        ey_coop = lerp2(data.floor(fi).img_dir_y_coop, p(1), p(2));
+        e_coop = [ex_coop ey_coop];       
+        
+        % get forces
         Fi = m * (v0*e - v)/data.tau;
+        Fi_coop = m * (v0*e_coop - v)/data.tau;
         
         % add force
-        data.floor(fi).agents(ai).f = data.floor(fi).agents(ai).f + Fi;
+        if(data.floor(fi).agents(ai).coop == 1)
+            data.floor(fi).agents(ai).f = data.floor(fi).agents(ai).f + Fi_coop;
+        else
+            data.floor(fi).agents(ai).f = data.floor(fi).agents(ai).f + Fi;
+        end 
     end
 end
 

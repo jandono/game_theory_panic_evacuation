@@ -20,14 +20,22 @@ set(h, 'Visible', 'off')
 %title(sprintf('floor %i', floor_idx));
 
 % plot agents
-if ~isempty(data.floor(floor_idx).agents)
+for ai=1:length(data.floor(floor_idx).agents)
+    % if ~isempty(data.floor(floor_idx).agents)
+    
     ang = [linspace(0,2*pi, 10) nan]';
     rmul = [cos(ang) sin(ang)] * data.pixel_per_meter;
-    draw = cell2mat(arrayfun(@(a) repmat(a.p,length(ang),1) + a.r*rmul, ...
-           data.floor(floor_idx).agents, 'UniformOutput', false)');
-    line(draw(:,2), draw(:,1), 'Color', 'r');
-end
 
+    if data.floor(floor_idx).agents(ai).coop == 1
+        draw = cell2mat(arrayfun(@(a) repmat(a.p,length(ang),1) + a.r*rmul, ...
+               data.floor(floor_idx).agents(ai), 'UniformOutput', false)');
+        line(draw(:,2), draw(:,1), 'Color', 'g');
+    else
+        draw = cell2mat(arrayfun(@(a) repmat(a.p,length(ang),1) + a.r*rmul, ...
+               data.floor(floor_idx).agents(ai), 'UniformOutput', false)');
+        line(draw(:,2), draw(:,1), 'Color', 'r');
+    end
+end
 % old drawing code...
 % ang = linspace(0,2*pi, 10);
 % cosang = cos(ang);

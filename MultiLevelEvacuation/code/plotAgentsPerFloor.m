@@ -1,4 +1,16 @@
 function plotAgentsPerFloor(data, floor_idx)
+
+persistent X;
+persistent Y;
+
+if nargin == 1
+    X = [data.time];
+    Y = [length(data.floor(floor_idx).agents)];
+else
+    X = [X, data.time];
+    Y = [Y, length(data.floor(floor_idx).agents)];
+end
+
 %plot time vs agents on floor
 
 h = subplot(data.floor(floor_idx).agents_on_floor_plot);
@@ -13,7 +25,8 @@ end
 axis([0 data.duration 0 data.total_agent_count]);
 
 hold on;
-plot(data.time, length(data.floor(floor_idx).agents), 'b-');
+%plot(data.time, length(data.floor(floor_idx).agents), 'b-');
+plot(X,Y, 'b-');
 hold off;
 
 title(sprintf('agents on floor %i', floor_idx));
