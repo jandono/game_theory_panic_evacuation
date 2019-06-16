@@ -43,7 +43,6 @@ void mexFunction(int nlhs, mxArray *plhs[], int nrhs, const mxArray *prhs[])
     dist = mxGetPr(prhs[1]);
     m = mxGetM(prhs[1]);
     n = mxGetN(prhs[1]);
-    printf("%d %d", m, n);
     
     
     /* create and init output (gradient) matrices */
