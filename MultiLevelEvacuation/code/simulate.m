@@ -28,7 +28,7 @@ timesteps = 0;
 cnt = 0;
 
 while (data.time < data.duration)
-    cnt = cnt + 1;
+
     tstart=tic;
     data = addDesiredForce(data);
     data = addWallForce(data);
@@ -49,6 +49,8 @@ while (data.time < data.duration)
         set(0,'CurrentFigure',data.figure_exit);
         plotExitedAgents(data);
     end
+    
+    cnt = cnt + 1;
     
     %% WE CHANGED THIS
     % print mean/median velocity of agents on each floor
