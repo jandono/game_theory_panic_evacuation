@@ -1,6 +1,8 @@
 //extracting the desired direction e from the position and velocity for given agent 
 #include <mex.h>
 
+// PRE: normalized gradient matrix, position of agent (coordinate x and y)
+// POST: 
 void mexFunction(int nlhs, mxArray *plhs[], int nrhs, const mxArray *prhs[])
 {
     int m, n, i0, i1, j0, j1, idx00;
@@ -29,10 +31,10 @@ void mexFunction(int nlhs, mxArray *plhs[], int nrhs, const mxArray *prhs[])
     x = x < 0 ? 0 : x > m - 1 ? m - 1 : x;
     y = y < 0 ? 0 : y > n - 1 ? n - 1 : y;
     
-    i0 = (int) x;
-    j0 = (int) y;
+    i0 = (int) x; // ???
+    j0 = (int) y; // ???
     
-    /* This part seems unnecessary. Simulations runs perfectly without it
+    /* This part seems unnecessary. Simulation runs perfectly without it
     i1 = i0 + 1;
     i1 = i1 > m - 1 ? m - 1 : i1;
     j1 = j0 + 1;
@@ -40,10 +42,10 @@ void mexFunction(int nlhs, mxArray *plhs[], int nrhs, const mxArray *prhs[])
     */
     
     idx00 = i0 + m * j0;
-    d00 = data[idx00];
-    d01 = data[idx00 + m];
-    d10 = data[idx00 + 1];
-    d11 = data[idx00 + m + 1];
+    d00 = data[idx00]; // gradient at agent position
+    d01 = data[idx00 + m]; // right side of the agent
+    d10 = data[idx00 + 1]; // below the agent
+    d11 = data[idx00 + m + 1]; // lower-right position of the agent
     
     wx1 = x - i0;
     wy1 = y - j0;
