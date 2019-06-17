@@ -1,0 +1,12 @@
+function isCollide=checkCollision(margin_array,index)
+    len=size(margin_array);
+    margin=margin_array(index);
+    if(sum(margin<0))
+    for i=1:len(3)
+        if(size(unique([margin;margin_array(:,:,i)],'row'),1)<size(margin,1)+size(margin_array(:,:,i),1))
+            isCollide=true;
+            break
+        end
+    end
+    isCollide=false;
+end
