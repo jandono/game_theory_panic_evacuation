@@ -1,0 +1,37 @@
+function geom=read_objects(filenames)
+    geom = geomObj;
+    for filename=filenames
+        config_path = fileparts(config_file); % fileparts() returns [filepath, name, extension]
+        if strcmp(config_path, '') == 1 % if path is empty (i.e. images are in the same folder)
+            config_path = '.';   
+        end
+
+        fid = fopen(config_file);
+        input = textscan(fid, '%s=%s');
+        fclose(fid);
+        keynames = input{1};
+        values = input{2};
+        v = str2double(values);
+        idx = ~isnan(v);
+        values(idx) = num2cell(v(idx));
+        config = cell2struct(values, keynames);
+        if(config.shape=='triangle')
+            geom = geom.insertTriangle(config.s1,config.p0)
+        end
+        else if(config.shape=='rectangle')
+            geom=geom.insertRectangle(config.p0,config.sizes,config.phi);
+        else 
+            geom=geom.insertCircle(config.p0,config.R);
+        geom.drawShapes(imread(config.))   
+    end
+    
+    s1 = [5;5]; p0 = [10;10];
+    geom = geom.insertTriangle(s1,p0);
+    p0 = [25; 25]; sizes = [10; 10]; phi = 120;
+    geom = geom.insertRectangle(p0,sizes,phi);
+    geom = geom.insertRectangle(p0,sizes,phi+40);
+    p0 = [0; 25]; R = 20;
+    geom = geom.insertCircle(p0,R);
+    image = imread('../data/config2_build.png');
+    image = geom.drawShapes(image);
+    imshow(image)
