@@ -7,16 +7,24 @@ N_children = 3;
 % Initialize Parents
 % 1 Set the initial conditions for everybody
 filename = '../data/Copy_of_config1_1_build.png';
+filename_original_picture = filename;
 shapes = {'../data/shape.conf','../data/shape2.conf','../data/shape3.conf'};
 [geom,room_k] = read_objects(shapes,filename);
 for k=1:N_children
     filename = strcat('../data/Room',num2str(k),'.png');
     imwrite(room_k,filename);
+    obj_filename = strcat('../data/Geom',num2str(k),'.mat');
+    save(obj_filename,'geom')
 end
 
-imshow('../data/Room2.png');
-
 %{
+It works! Loads with the same variable name
+clear;
+imshow('../data/Room2.png');
+load obj_filename;
+geom.triangles
+%}
+
 for it=1:N_it
     
     %% For all children: Simulate
@@ -24,7 +32,7 @@ for it=1:N_it
     % Find a way to access measured velocities of the agents and returns it to
     %  fitness vector (-> simulate ~line 43)
     fitness = zeros(1,N_children);
-    for child = 1:N_children
+    parfor child = 1:N_children
         filename = strcat('../data/Room',num2str(k),'.png');
         room_picture = imread(filename);
         imwrite(room_picture,'../data/config1_1_build.png');
@@ -33,6 +41,5 @@ for it=1:N_it
     end
     
     fitness
-    A_nextGeneration(fitness,N_children)
+    A_nextGeneration(fitness,N_children,filename_original_picture)
 end;
-%}

@@ -17,8 +17,8 @@ for child=1:N_children
     % Load the chosen room
     k = children_numbers(child);
     obj_filename = strcat('../data/Geom',num2str(k),'.mat'); % Parent Path
-    obj_filename_fut = strcat('../data/Geom',num2str(child),'_future.mat');
-    pic_filename = strcat('../data/Room',num2str(child),'.png');
+    obj_filename_fut = strcat('../data/Geom',num2str(chil),'_future.mat');
+    pic_filename = strcat('../data/Room',num2str(k),'.png');
     %room_k = imread(filename);
     load(obj_filename); % This is called geom
     

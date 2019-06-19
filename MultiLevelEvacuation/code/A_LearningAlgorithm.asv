@@ -7,15 +7,17 @@ N_children = 3;
 % Initialize Parents
 % 1 Set the initial conditions for everybody
 filename = '../data/Copy_of_config1_1_build.png';
-shapes = ["shape.conf",'shape2.conf','shape3.conf'];
+shapes = {'../data/shape.conf','../data/shape2.conf','../data/shape3.conf'};
 [geom,room_k] = read_objects(shapes,filename);
 for k=1:N_children
     filename = strcat('../data/Room',num2str(k),'.png');
     imwrite(room_k,filename);
+    obj_filename = strcat('../data/Geom',num2str(k),'.mat');
+    save(obj_filename,'geom')
 end
 
 imshow('../data/Room2.png');
-
+geom_last = load(obj_filename);
 %{
 for it=1:N_it
     

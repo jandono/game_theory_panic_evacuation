@@ -6,7 +6,6 @@ function [geom,image] =read_objects(filenames,imagename)
 %         if strcmp(config_path, '') == 1 % if path is empty (i.e. images are in the same folder)
 %             config_path = '.';   
 %         end
-        whos filename
         fid = fopen(filename,'r');
         input = textscan(fid, '%s=%s');
         fclose(fid);
@@ -15,8 +14,8 @@ function [geom,image] =read_objects(filenames,imagename)
         v = str2double(values);
         idx = ~isnan(v);
         values(idx) = num2cell(v(idx));
-        keynames
-        values
+        %keynames
+        %values
         
         config = cell2struct(values, keynames);
         if(strcmp(config.shape,'triangle'))
