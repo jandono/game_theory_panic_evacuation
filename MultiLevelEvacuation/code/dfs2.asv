@@ -1,0 +1,25 @@
+function dfs2(index,image_object)
+    %index
+    if(mod(index(1),100)==0 && mod(index(1),100)==0)
+        index
+        size(image_object.pixels)
+    end
+    image_object.pixels=[image_object.pixels;index];
+    image_object.image(index(1),index(2))=0;
+    for x=[index(1)-1,index(1)+1]
+        if ~(0 < x && x <= size(image_object.image,1))
+            %size(image_object.image,1)
+            continue;
+        end
+
+        for y=[index(2)-1,index(2)+1]
+            if ~(0 < y && y <= size(image_object.image,2))
+                continue;
+            end
+            if(image_object.image(x,y)==1)
+                %fprintf('%i %i\n',x,y);
+                dfs2([x y],image_object);
+            end
+        end
+    end
+end

@@ -8,7 +8,7 @@ function isCollide=checkCollision(margin_array,index,size)
         pause()
         %a=union(margin,margin_array{i},'rows')
         %size(a)
-        if(length(unique([margin;margin_array{i}],'rows'))<length(margin)+length(margin_array{i}))
+        if(length(unique([margin;margin_array{i}],'rows'),1)<length(margin)+length(margin_array{i},1))
             isCollide=true;
             break
         end
