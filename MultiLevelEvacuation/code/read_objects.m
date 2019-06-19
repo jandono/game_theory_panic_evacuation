@@ -1,11 +1,12 @@
-function geom=read_objects(filenames,imagename)
+function [geom,image] =read_objects(filenames,imagename)
     geom = geomObj;
-    for filename=filenames
-        config_path = fileparts(filename); % fileparts() returns [filepath, name, extension]
-        if strcmp(config_path, '') == 1 % if path is empty (i.e. images are in the same folder)
-            config_path = '.';   
-        end
-        filename
+    for i=1:length(filenames)
+        filename=filenames{i};
+%         config_path = fileparts(filename); % fileparts() returns [filepath, name, extension]
+%         if strcmp(config_path, '') == 1 % if path is empty (i.e. images are in the same folder)
+%             config_path = '.';   
+%         end
+        whos filename
         fid = fopen(filename,'r');
         input = textscan(fid, '%s=%s');
         fclose(fid);
@@ -28,6 +29,6 @@ function geom=read_objects(filenames,imagename)
             geom=geom.insertCircle([config.p0x;config.p0y],config.R);
         end
         image=geom.drawShapes(imread(imagename));
-        imshow(image)
+        %imshow(image)
     end
     

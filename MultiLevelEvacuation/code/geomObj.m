@@ -43,16 +43,26 @@ classdef geomObj
         function image = drawCircle(obj,circNumber,image)
             % Search
             p0R = obj.circles(:,circNumber);
-            p0 = p0R(1:2);
-            R = p0R(3);
+            p0 = p0R(1:2)
+            R = p0R(3)
             
             % Geometrical Descr
             inCircle = @(p) norm(p-p0) < R;
             
             % Draw
-            for i=1:size(image,1)
-                for j=1:size(image,2)
-                    p = obj.meter_per_pixel*[i;j];
+            lb_i = floor((p0(2)-R)/obj.meter_per_pixel);
+            ub_i = ceil((p0(2)+R)/obj.meter_per_pixel);
+            lb_j = floor((p0(1)-R)/obj.meter_per_pixel);
+            ub_j = ceil((p0(1)+R)/obj.meter_per_pixel);
+            
+            lb_i = max(1,lb_i);
+            ub_i = min(size(image,1),ub_i);
+            lb_j = max(1,lb_j);
+            ub_j = min(size(image,2),ub_j);
+            
+            for i=lb_i:ub_i
+                for j=lb_j:ub_j
+                    p = obj.meter_per_pixel*[j;i];
                     if inCircle(p)
                         image(i,j,:) = 0;
                     end
@@ -75,15 +85,27 @@ classdef geomObj
             inRectangle = @(p) prod(abs(Q*(p-p0)) < [sizes(1)/2; sizes(2)/2]) == 1;
             
             % Draw
+            % Worst case: The corner points straight up.
+            % Thus can bound the domain by center +- 0.5*sqrt(a^2+b^2)
+            lb_i = (p0(2)-norm(sizes/2))/obj.meter_per_pixel;
+            ub_i = (p0(2)+norm(sizes/2))/obj.meter_per_pixel;
+            lb_j = (p0(1)-norm(sizes/2))/obj.meter_per_pixel;
+            ub_j = (p0(1)+norm(sizes/2))/obj.meter_per_pixel;
             
-            for i=1:size(image,1)
-                for j=1:size(image,2)
-                    p = obj.meter_per_pixel*[i;j];
+            lb_i = max(1,floor(lb_i));
+            ub_i = min(size(image,1),ceil(ub_i));
+            lb_j = max(1,floor(lb_j));
+            ub_j = min(size(image,2),ceil(ub_j));
+            
+            for i=lb_i:ub_i
+                for j=lb_j:ub_j
+                    p = obj.meter_per_pixel*[j;i];
                     if inRectangle(p)
                         image(i,j,:) = 0;
                     end
                 end
             end
+            
         end
         
         function image = drawTriangle(obj,triangleNumber,image)
@@ -105,10 +127,24 @@ classdef geomObj
             inTriangle = @(p) prod(V*p < b);
             
             % Draw it for the matrix
+            % The bounds can be found the exact same way as in circle
+            % (spin the triangle) and the radius is
+            center = s1+2/3*(p0-s1);
+            R = 2/3*norm(p0-s1);
             
-            for i=1:size(image,1)
-                for j=1:size(image,2)
-                    p = obj.meter_per_pixel*[i;j];
+            lb_i = floor((center(2)-R)/obj.meter_per_pixel);
+            ub_i = ceil((center(2)+R)/obj.meter_per_pixel);
+            lb_j = floor((center(1)-R)/obj.meter_per_pixel);
+            ub_j = ceil((center(1)+R)/obj.meter_per_pixel);
+            
+            lb_i = max(1,lb_i);
+            ub_i = min(size(image,1),ub_i);
+            lb_j = max(1,lb_j);
+            ub_j = min(size(image,2),ub_j);
+            
+            for i=lb_i:ub_i
+                for j=lb_j:ub_j
+                    p = obj.meter_per_pixel*[j;i];
                     if inTriangle(p)
                         image(i,j,:) = 0;
                     end
