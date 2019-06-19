@@ -11,7 +11,9 @@ function ObjectArray=extractShape(img_build)
             break
         end
         [pixel(1),pixel(2)]=ind2sub(size(img_wall),pixel(1));
-        [pixels,img_wall]=dfs(pixel,img_wall);
+        [pixels]=dfs(pixel,img_wall,[]);
+        'dfs ended'
+        img_wall(pixels)=0;
         for pixel=pixels
             sub_img=img_build(pixel(1)-1:pixel(1)+1:2,pixel(1)-1:pixel(1)+1:2,1:3);
             if(sum(sub_img~=255)~=0)

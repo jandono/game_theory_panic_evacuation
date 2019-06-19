@@ -18,9 +18,14 @@ for child=1:N_children
     room_k = imread(filename);
     
     % Randomize child and save to same filename + future
+    %{
     room_k = room_k + uint8(randi(2,size(room_k))-1);
     filename = strcat('../data/Room',num2str(child),'_future.png'); % CANNOT DO THIS
     imwrite(room_k,filename);
+    %}
+    
+    % Apply Ding's Code to randomize the images
+    
 end
 
 % Override Parents
