@@ -23,7 +23,7 @@ eps2avi.sh in this folder to generate a video in the folder ../videos (run
 - data format:
  all internal data is stored in pixels not in meters
 
-##How to run the code
+## How to run the code
 
 - simulations by adding geometric shapes as objects: A_LearningAlgorithm
 - simulations by extracting pixels as objects: pixel_LearningAlgorithm
