@@ -26,8 +26,10 @@ function ObjectArray=extractShape(img_build)
         %img_wall(pixels)=0;
         for pixel2=pixels'      
             pixel=pixel2';
-            sub_img=img_build(max(pixel(1)-1,1):2:min(pixel(1)+1,size(img_wall,1)),max(pixel(2)-1,1):2:min(pixel(2)+1,size(img_wall,2)),1:3);
-            if(sum(sub_img~=255)~=0)
+            sub_img=img_build(max(pixel(1)-1,1):min(pixel(1)+1,size(img_wall,1)),max(pixel(2)-1,1):min(pixel(2)+1,size(img_wall,2)),1:3);
+            %size(sub_img)
+            % if it is a neighbor to a non-black pixel
+            if(~isempty(find(sub_img~=0,1)))
                 margin=[margin;pixel];
             end
         end

@@ -42,7 +42,7 @@ for it=1:N_it
         end
         %imwrite(room_picture,'../data/config1_1_build.png');
 
-        fitness_child = simulate(config_file,strcat('../data/Room',num2str(k),'.png'));
+        fitness_child = simulate(config_file,strcat('../data/Room',num2str(child),'.png'));
         fitness(child) = fitness_child;
     end
     

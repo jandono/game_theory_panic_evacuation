@@ -31,7 +31,7 @@ function ObjectArrays=pixel_nextGeneration(fitness,N_children,ObjectArrays)
         %childRoom = geom.drawShapes(originalPicture);
         % and store the new room (future!)
         %childRoom=geom.drawShapes()
-        [room_k,ObjectArrays{child}.pixel_array,ObjectArrays{child}.margin_array]=variationRoomStructure(room_k,ObjectArrays{child}.pixel_array,ObjectArrays{child}.margin_array);
+        [room_k,ObjectArrays{child}.pixel_array,ObjectArrays{child}.margin_array]=variationRoomStructure(room_k,ObjectArrays{child}.pixel_array,ObjectArrays{child}.margin_array,10);
         imwrite(room_k,future_pic_filename);
     end
 

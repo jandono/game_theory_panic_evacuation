@@ -2,7 +2,7 @@
 % different copies
 
 N_it = 2;
-N_children = 12;
+N_children = 3;
 
 % Initialize Parents
 % 1 Set the initial conditions for everybody
@@ -33,7 +33,7 @@ for it=1:N_it
     %  fitness vector (-> simulate ~line 43)
     fitness = zeros(1,N_children);
     parfor child = 1:N_children
-        filename = strcat('../data/Room',num2str(k),'.png');
+        filename = strcat('../data/Room',num2str(child),'.png');
         room_picture = imread(filename);
         imwrite(room_picture,'../data/config1_1_build.png');
         fitness_child = simulate;
