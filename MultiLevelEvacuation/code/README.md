@@ -22,4 +22,10 @@ eps2avi.sh in this folder to generate a video in the folder ../videos (run
 
 - data format:
  all internal data is stored in pixels not in meters
+ 
+ 
+ ## run the code
+ - moving geometric shaped objects:   A_LearningAlgorithm
+ - moving arbitrarily shaped objects in the map: pixel_LearningAlgorithm
+ 
 
