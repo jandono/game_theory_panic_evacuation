@@ -14,7 +14,7 @@ if nargin==0
 end
 
 fprintf('Load config file...\n');
-config = loadConfig(config_file);cd 
+config = loadConfig(config_file);
 
 data = initialize(config);
 

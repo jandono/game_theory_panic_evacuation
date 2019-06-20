@@ -2,7 +2,7 @@
 % different copies
 
 N_it = 2;
-N_children = 3;
+N_children = 12;
 
 % Initialize Parents
 % 1 Set the initial conditions for everybody

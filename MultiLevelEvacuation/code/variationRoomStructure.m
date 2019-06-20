@@ -13,9 +13,14 @@ function [new_img_build,new_pixel_array,new_margin_array]=variationRoomStructure
        if(~checkCollision(new_margin_array,i,[size(img_build,1),size(img_build,2)]))
            new_margin_array{i}=new_margin_array{i}-translation(i);
        else
-           new_img_build(new_pixel_array{i}(:,1)+translation(i,1),new_pixel_array{i}(:,2)+translation(i,2),1:3)=new_img_build(new_pixel_array{i}(:,1)),new_pixel_array{i}(:,2),1:3);
-           new_img_build(new_pixel_array(i,1),new_pixel_array(i,2),:)=new_img_build(new_pixel_array(i,1)-translation(i,1),new_pixel_array(i,2)-translation(i,2),:);
-           new_pixel_array{i}=new_pixel_array{i}+translation(i);
+           for j=1:len
+            new_img_build(new_pixel_array{i}(j,1)+translation(j,1),new_pixel_array{i}(j,2)+translation(j,2),1:3)=new_img_build(new_pixel_array{i}(j,1)),new_pixel_array{i}(j,2),1:3);
+            new_img_build(new_pixel_array{i}(j,1),new_pixel_array{i}(j,1))=new_img_build(new_pixel_array{i}(j,1)-translation(j,1),new_pixel_array{i}(j,2)-translation{i}(j,2));
+            
+           end
+           for j=1:len
+            new_pixel_array{i}=new_pixel_array{i}+translation(i);
+           end
        end
    end
 end
