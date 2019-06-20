@@ -1,11 +1,12 @@
-function config = loadConfig(config_file)
+function config = loadConfig(config_file,file_name)
 % load the configuration file
 %
 %  arguments:
 %   config_file     string, which configuration file to load
 %
-
-
+if(nargin==1)
+    file_name=[];
+end
 % get the path from the config file -> to read the images
 config_path = fileparts(config_file); % fileparts() returns [filepath, name, extension]
 if strcmp(config_path, '') == 1 % if path is empty (i.e. images are in the same folder)
@@ -32,8 +33,10 @@ config = cell2struct(values, keynames); % convert to structure array
 for i=1:config.floor_count
     
     %building structure
-    file = config.(sprintf('floor_%d_build', i));
-    file_name = [config_path '/' file];
+    if isempty(file_name)
+        file = config.(sprintf('floor_%d_build', i));
+        file_name = [config_path '/' file];
+    end
     
     % At this point read from the tensor that was returned from alg
     img_build = imread(file_name); % imread returns m*n*3 array representing the image

@@ -16,12 +16,12 @@ function ObjectArray=extractShape(img_build)
 %         img_object.image=img_wall;
 %         img_object.pixels=[];
         dfs2(pixel,img_object);
-        'dfs ended'
+        %'dfs ended'
         img_wall=img_object.image;
         pixels=img_object.pixels;
 
-        pixels
-        imshow(img_wall)
+        %pixels
+       % imshow(img_wall)
         %img_object=img_object.pixels;
         %img_wall(pixels)=0;
         for pixel2=pixels'      
@@ -31,8 +31,8 @@ function ObjectArray=extractShape(img_build)
                 margin=[margin;pixel];
             end
         end
-        size(margin)
-        size(pixels)
+        %size(margin)
+        %size(pixels)
         ObjectArray.pixel_array{end+1}=pixels;
         ObjectArray.margin_array{end+1}=margin;
     end

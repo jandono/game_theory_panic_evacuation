@@ -5,16 +5,20 @@
 %individual position and velocity
 
 
-function avg_effic = simulate(config_file)
+function avg_effic = simulate(config_file,filename)
 % run this to start the simulation
 
 % if no config_file provided -> use the default one
 if nargin==0 
     config_file='../data/config1.conf';
+    filename='../data/config1_1_build.png';
+end
+if nargin==1
+    config_file='../data/config1.conf';
 end
 
 fprintf('Load config file...\n');
-config = loadConfig(config_file);
+config = loadConfig(config_file,filename);
 
 data = initialize(config);
 

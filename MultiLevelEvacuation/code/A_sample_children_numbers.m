@@ -1,7 +1,7 @@
 %% Sampling for the next generation of room structures(before variation),return the index of the children
 % from the last generation
 
-function children_numbers = sample_children_numbers(parent_fitness,N_children)
+function children_numbers = A_sample_children_numbers(parent_fitness,N_children)
 
 N_parents = length(parent_fitness);
 

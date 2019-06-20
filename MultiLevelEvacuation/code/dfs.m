@@ -1,4 +1,4 @@
-%depth first search to find the connected component of wall pixels
+%has been obsolete
 function [pixels]=dfs(index,image,old_pixels)
 
 % if isFirstCall
@@ -28,7 +28,7 @@ for x=[index(1)-1,index(1)+1]
 end
 size(pixels)
 if(~size(unique(pixels,'rows'),1)==size(pixels,1))
-    'error'
+    'error';
     size(unique(pixels,'rows'),1)
 end
 end

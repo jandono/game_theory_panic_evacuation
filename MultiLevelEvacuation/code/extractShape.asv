@@ -32,7 +32,7 @@ function ObjectArray=extractShape(img_build)
         end
         size(margin)
         size(pixels)
-        pause()
+        %pause()
         ObjectArray.pixel_array{end+1}=pixels;
         ObjectArray.margin_array{end+1}=margin;
     end

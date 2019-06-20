@@ -26,6 +26,5 @@ eps2avi.sh in this folder to generate a video in the folder ../videos (run
 ##How to run the code
 
 - simulations by adding geometric shapes as objects: A_LearningAlgorithm
-- simulations by extracting pixels as objects: pixel_LearningAlgorithm
-
+- simulations by extracting pixels as objects: p
 

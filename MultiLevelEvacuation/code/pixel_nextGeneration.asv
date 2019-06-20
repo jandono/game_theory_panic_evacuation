@@ -1,5 +1,4 @@
-%% Sample the next generation of room structures, variate the room structure by using random direction translation of objects
-%represented by black pixels
+%% Sample the next generation of room structures, variate them using random noise,
 % and new room structures to images
 
 
@@ -20,7 +19,7 @@ function ObjectArrays=pixel_nextGeneration(fitness,N_children,ObjectArrays)
        % obj_filename = strcat('../data/Geom',num2str(k),'.mat'); % Parent Path
         %obj_filename_fut = strcat('../data/Geom',num2str(child),'_future.mat');
         pic_filename = strcat('../data/Room',num2str(k),'.png');
-        future_pic_filename=strcat('../data/Room_future',num2str(child),'.png');
+        future_pic_filename=strcat('../data/Room_future',num2str(k),'.png');
         room_k = imread(pic_filename);
         %load(obj_filename); % This is called geom
         
@@ -31,15 +30,14 @@ function ObjectArrays=pixel_nextGeneration(fitness,N_children,ObjectArrays)
         %childRoom = geom.drawShapes(originalPicture);
         % and store the new room (future!)
         %childRoom=geom.drawShapes()
-        [room_k,ObjectArrays{child}.pixel_array,ObjectArrays{child}.margin_array]=variationRoomStructure(room_k,ObjectArrays{child}.pixel_array,ObjectArrays{child}.margin_array);
+        [roomk,ObjectArrays{child}.pixelArray,ObjectArrays{child}.marginArray]=variationRoomStructure(roomk,ObjectArrays{child}.pixelArray,marginArray);
         imwrite(room_k,future_pic_filename);
     end
-
-    for child=1:N_children
-        filename = strcat('../data/Room_future',num2str(child),'.png');
-        target = strcat('../data/Room',num2str(child),'.png');
-        movefile(filename,target);
-    end
+end
+for child=1:N_children
+    filename = strcat('../data/Geom',num2str(child),'_future.mat');
+    target = strcat('../data/Geom',num2str(child),'.mat');
+    movefile(filename,target)
 end
     % Override Parents
     

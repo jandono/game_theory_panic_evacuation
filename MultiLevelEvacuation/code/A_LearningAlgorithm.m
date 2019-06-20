@@ -42,4 +42,4 @@ for it=1:N_it
     
     fitness
     A_nextGeneration(fitness,N_children,filename_original_picture)
-end;
+end
