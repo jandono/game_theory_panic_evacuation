@@ -23,7 +23,7 @@ for child=1:N_children
     load(obj_filename); % This is called geom
     
     % Randomize the geometry parameters
-    geom = geom.translateRand(0.1); %translation distance is in meters
+    geom = geom.translateRand(0.5); %translation distance is in meters
     save(obj_filename_fut,'geom');
     % Draw geometry on it 
     childRoom = geom.drawShapes(originalPicture);

@@ -5,6 +5,7 @@ classdef geomObj
         circles;
         rectangles;
         meter_per_pixel = 0.1;
+        boundaryXY = [8.8 28.7 12.0 34.7]; %lbx ubx lby uby
     end
     
     methods
@@ -152,16 +153,52 @@ classdef geomObj
             end
         end
         
+        function inBuilding = isInBuilding(obj,coord)
+            if obj.boundaryXY(1) <= coord(1) && coord(1) <= obj.boundaryXY(2) && ...
+                    obj.boundaryXY(3) <= coord(2) && coord(2) <= obj.boundaryXY(4)
+                inBuilding = 1;
+            else
+                inBuilding = 0;
+            end
+        end
+        
         function obj = translateRand(obj,transDist)
-            phi_rand = 2*pi*rand(1,size(obj.rectangles,2));
-            obj.rectangles(1:2,:) = obj.rectangles(1:2,:)+transDist*[cos(phi_rand); sin(phi_rand)];
             
-            phi_rand = 2*pi*rand(1,size(obj.triangles,2));
-            obj.triangles(1:2,:) = obj.triangles(1:2,:)+transDist*[cos(phi_rand); sin(phi_rand)];
-            obj.triangles(3:4,:) = obj.triangles(3:4,:)+transDist*[cos(phi_rand); sin(phi_rand)];
+            if ~isempty(obj.rectangles)
+                phi_rand = 2*pi*rand(1,size(obj.rectangles,2));
+                candidate = obj.rectangles(1:2,:)+transDist*[cos(phi_rand); sin(phi_rand)];
+                for i=1:size(candidate,2)
+                    if obj.isInBuilding(candidate(:,i))
+                        obj.rectangles(1:2,i) = candidate(:,i);
+                    end
+                end
+            end
             
-            phi_rand = 2*pi*rand(1,size(obj.circles,2));
-            obj.circles(1:2,:) = obj.circles(1:2,:)+transDist*[cos(phi_rand); sin(phi_rand)];
+            if ~isempty(obj.triangles)
+                phi_rand = 2*pi*rand(1,size(obj.triangles,2));
+                candidate1 = obj.triangles(1:2,:)+transDist*[cos(phi_rand); sin(phi_rand)];
+                candidate2 = obj.triangles(3:4,:)+transDist*[cos(phi_rand); sin(phi_rand)];
+                for i=1:size(candidate1,2)
+                    if obj.isInBuilding(candidate1(:,i))
+                        obj.triangles(1:2,i) = candidate1(:,i);
+                        obj.triangles(3:4,i) = candidate2(:,i);
+                    end
+                end
+                %obj.triangles(1:2,:) = obj.triangles(1:2,:)+transDist*[cos(phi_rand); sin(phi_rand)];
+                %obj.triangles(3:4,:) = obj.triangles(3:4,:)+transDist*[cos(phi_rand); sin(phi_rand)];
+            end
+            
+            if ~isempty(obj.circles)
+                phi_rand = 2*pi*rand(1,size(obj.circles,2));
+                candidate = obj.circles(1:2,:)+transDist*[cos(phi_rand); sin(phi_rand)];
+                for i=1:size(candidate,2)
+                    if obj.isInBuilding(candidate(:,i))
+                        obj.circles(1:2,i) = candidate(:,i);
+                    end
+                end
+                %obj.circles(1:2,:) = obj.circles(1:2,:)+transDist*[cos(phi_rand); sin(phi_rand)];
+            end
+            
         end
     end
 end

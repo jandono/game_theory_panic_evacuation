@@ -4,10 +4,11 @@ function A_LearningAlgorithm(ExperimentNumber,N_it,N_children)
 
 % Initialize Parents
 % 1 Set the initial conditions for everybody
-filename = '../data/InitialRooms/BasicRoom.png';
+filename = '../data/InitialRooms/Basic_Room.png';
 filename_original_picture = filename;
 %shapes = {'../data/shape.conf','../data/shape2.conf','../data/shape3.conf'};
 shapes = getShapePaths(ExperimentNumber);
+whos shapes
 [geom,room_k] = read_objects(shapes,filename);
 for k=1:N_children
     filename = strcat('../data/Room',num2str(k),'.png');
@@ -40,5 +41,13 @@ for it=1:N_it
     end
     
     fitness
+    
+    %{
+    for child = 1:N_children
+        filename = strcat('../data/Room',num2str(child),'.png');
+        imshow(imread(filename));
+    end
+    %}
+    
     A_nextGeneration(fitness,N_children,filename_original_picture)
 end;

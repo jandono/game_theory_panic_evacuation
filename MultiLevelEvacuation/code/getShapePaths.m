@@ -1,6 +1,6 @@
 function shapes = getShapePaths(ExperimentNumber)
 
-% Experiment with one square in a room
+% Experiment with one cirlcle in a room
 if ExperimentNumber == 0
     shapes = {'../data/InitialRooms/GESS_all_shapes_circle.conf'};
 end
