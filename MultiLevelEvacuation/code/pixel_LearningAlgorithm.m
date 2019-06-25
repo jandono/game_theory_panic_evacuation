@@ -6,7 +6,7 @@ N_children = 8;
 
 % Initialize Parents
 % 1 Set the initial conditions for everybody
-filename = '../data/Copy_of_config1_1_build.png';
+filename = '../data/config2_build.png';
 % filename_original_picture = filename;
 % shapes = {'../data/shape.conf','../data/shape2.conf','../data/shape3.conf'};
 % [geom,room_k] = read_objects(shapes,filename);
@@ -37,6 +37,9 @@ for it=1:N_it
     for child = 1:N_children
         filename = strcat('../data/Room',num2str(child),'.png');
         room_picture = imread(filename);
+        room_picture=room_picture(100:300,1:400,1:3)
+        imshow(room_picture)
+        
         if(it==1)
             ObjectArrays{end+1}=extractShape(room_picture);
         end
