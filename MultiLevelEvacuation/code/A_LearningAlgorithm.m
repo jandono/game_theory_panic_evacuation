@@ -1,14 +1,13 @@
 %% The main function. The pipeline of running evolutionary algorithm with N_it iterations and N_children
 % different copies
-
-N_it = 2;
-N_children = 3;
+function A_LearningAlgorithm(ExperimentNumber,N_it,N_children)
 
 % Initialize Parents
 % 1 Set the initial conditions for everybody
-filename = '../data/Copy_of_config1_1_build.png';
+filename = '../data/InitialRooms/BasicRoom.png';
 filename_original_picture = filename;
-shapes = {'../data/shape.conf','../data/shape2.conf','../data/shape3.conf'};
+%shapes = {'../data/shape.conf','../data/shape2.conf','../data/shape3.conf'};
+shapes = getShapePaths(ExperimentNumber);
 [geom,room_k] = read_objects(shapes,filename);
 for k=1:N_children
     filename = strcat('../data/Room',num2str(k),'.png');
