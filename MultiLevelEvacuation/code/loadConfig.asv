@@ -35,14 +35,8 @@ for i=1:config.floor_count
     
     %building structure
     if flag==1
-        file = config.(sprintf('floor_%d_build', i));
-        file_name = [config_path '/' file];
-    else
-        file_name
-        filebar = config.(sprintf('floor_%d_build', i))
-        [config_path '/' filebar];
-    end
-    
+    file = config.(sprintf('floor_%d_build', i));
+    file_name = [config_path '/' file];
     file_name
     config_file
     % At this point read from the tensor that was returned from alg

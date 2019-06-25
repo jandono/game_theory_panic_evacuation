@@ -33,10 +33,10 @@ for it=1:N_it
     %  fitness vector (-> simulate ~line 43)
     fitness = zeros(1,N_children);
     parfor child = 1:N_children
-        filename = strcat('../data/Room',num2str(k),'.png');
-        room_picture = imread(filename);
-        imwrite(room_picture,'../data/config1_1_build.png');
-        fitness_child = simulate;
+        filename = strcat('../data/Room',num2str(child),'.png');
+        %room_picture = imread(filename);
+        %imwrite(room_picture,'../data/config1_1_build.png');
+        fitness_child = simulate(0,filename)
         fitness(child) = fitness_child;
     end
     
