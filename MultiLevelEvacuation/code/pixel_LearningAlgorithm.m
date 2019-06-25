@@ -38,7 +38,7 @@ for it=1:N_it
         filename = strcat('../data/Room',num2str(child),'.png');
         room_picture = imread(filename);
         room_picture=room_picture(100:300,1:400,1:3)
-        imshow(room_picture)
+        %imshow(room_picture)
         
         if(it==1)
             ObjectArrays{end+1}=extractShape(room_picture);
