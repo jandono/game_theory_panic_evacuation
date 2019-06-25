@@ -154,12 +154,14 @@ classdef geomObj
         
         function obj = translateRand(obj,transDist)
             phi_rand = 2*pi*rand(1,size(obj.rectangles,2));
-            obj.rectangles(:,1:2) = obj.rectangles(:,1:2)+ ...
-                transDist*[cos(phi_rand); sin(phi_rand)];
+            obj.rectangles(1:2,:) = obj.rectangles(1:2,:)+transDist*[cos(phi_rand); sin(phi_rand)];
+            
             phi_rand = 2*pi*rand(1,size(obj.triangles,2));
-            obj.triangles(:,1:2) = obj.rectangles(:,1:2)+ ...
-                transDist*[cos(phi_rand); sin(phi_rand)];
+            obj.triangles(1:2,:) = obj.triangles(1:2,:)+transDist*[cos(phi_rand); sin(phi_rand)];
+            obj.triangles(3:4,:) = obj.triangles(3:4,:)+transDist*[cos(phi_rand); sin(phi_rand)];
+            
             phi_rand = 2*pi*rand(1,size(obj.circles,2));
+            obj.circles(1:2,:) = obj.circles(1:2,:)+transDist*[cos(phi_rand); sin(phi_rand)];
         end
     end
 end
