@@ -1,5 +1,5 @@
 mex 'fastSweeping.c'
 mex 'getNormalizedGradient.c'
-mex 'lerp2.c'
-mex 'createRangeTree.c'
-mex 'rangeQuery.c'
+mex -O CFLAGS="\$CFLAGS -std=c99" 'lerp2.c'
+mex -O CFLAGS="\$CFLAGS -std=c99" 'createRangeTree.c'
+mex -O CFLAGS="\$CFLAGS -std=c99" 'rangeQuery.c'
