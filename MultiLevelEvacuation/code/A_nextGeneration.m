@@ -2,7 +2,7 @@
 % and new room structures to images
 
 
-function nextGeneration(fitness,N_children,filename_original_picture)
+function nextGeneration(fitness,N_children,filename_original_picture,directory)
 
 
 %% Resample Children room numbers
@@ -16,9 +16,9 @@ originalPicture = imread(filename_original_picture);
 for child=1:N_children
     % Load the chosen room
     k = children_numbers(child);
-    obj_filename = strcat('../data/Geom',num2str(k),'.mat'); % Parent Path
-    obj_filename_fut = strcat('../data/Geom',num2str(child),'_future.mat');
-    pic_filename = strcat('../data/Room',num2str(child),'.png');
+    obj_filename = strcat(directory,'Geom',num2str(k),'.mat'); % Parent Path
+    obj_filename_fut = strcat(directory,'Geom',num2str(child),'_future.mat');
+    pic_filename = strcat(directory,'Room',num2str(child),'.png');
     %room_k = imread(filename);
     load(obj_filename); % This is called geom
     
@@ -33,7 +33,7 @@ end
 
 % Override Parents
 for child=1:N_children
-    filename = strcat('../data/Geom',num2str(child),'_future.mat');
-    target = strcat('../data/Geom',num2str(child),'.mat');
+    filename = strcat(directory,'Geom',num2str(child),'_future.mat');
+    target = strcat(directory,'Geom',num2str(child),'.mat');
     movefile(filename,target)
 end

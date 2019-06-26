@@ -18,8 +18,8 @@ if config_file==0
 end
 
 fprintf('Load config file...\n');
-config_file
-pic_filename
+%config_file
+%pic_filename
 config = loadConfig(config_file,pic_filename);
 
 data = initialize(config);
@@ -40,18 +40,18 @@ while (data.time < data.duration)
     data = applyForcesAndMove(data);
     
     % do the plotting
-    set(0,'CurrentFigure',data.figure_floors);
-    for floor=1:data.floor_count
-        plotAgentsPerFloor(data, floor);
-        plotFloor(data, floor);
-    end
-    if data.save_frames==1
-        print('-depsc2',sprintf('frames/%s_%04i.eps', ...
-            data.frame_basename,frame), data.figure_floors);
-    end
+    %set(0,'CurrentFigure',data.figure_floors);
+    %for floor=1:data.floor_count
+    %    plotAgentsPerFloor(data, floor);
+    %    plotFloor(data, floor);
+    %end
+    %if data.save_frames==1
+    %    print('-depsc2',sprintf('frames/%s_%04i.eps', ...
+    %        data.frame_basename,frame), data.figure_floors);
+    %end
     
-    set(0,'CurrentFigure',data.figure_exit);
-    plotExitedAgents(data);
+    %set(0,'CurrentFigure',data.figure_exit);
+    %plotExitedAgents(data);
     
     
     %% WE CHANGED THIS
@@ -79,15 +79,15 @@ while (data.time < data.duration)
         fprintf('All agents are now saved (or are they?). Time: %.2f sec\n', data.time);
         fprintf('Total Agents: %i\n', data.total_agent_count);
         
-        print('-depsc2',sprintf('frames/exited_agents_%s.eps', ...
-            data.frame_basename), data.figure_floors);
+        %print('-depsc2',sprintf('frames/exited_agents_%s.eps', ...
+        %    data.frame_basename), data.figure_floors);
         break;
     end
     
     
     telapsed = toc(tstart);
     pause(max(data.dt - telapsed, 0.01));
-    fprintf('Frame %i done (took %.3fs; %.3fs out of %.3gs simulated).\n', frame, telapsed, data.time, data.duration);
+    %fprintf('Frame %i done (took %.3fs; %.3fs out of %.3gs simulated).\n', frame, telapsed, data.time, data.duration);
     frame = frame + 1;
     
     %data

@@ -1,0 +1,37 @@
+Sender: LSF System <lsfadmin@eu-c7-109-01>
+Subject: Job 94064571: <matlab -nodisplay -singleCompThread -r A_LearningAlgorithm\(1,16,12\)> in cluster <euler> Exited
+
+Job <matlab -nodisplay -singleCompThread -r A_LearningAlgorithm\(1,16,12\)> was submitted from host <eu-login-06-ng> by user <jding> in cluster <euler> at Wed Jun 26 01:16:51 2019
+Job was executed on host(s) <12*eu-c7-109-01>, in queue <normal.4h>, as user <jding> in cluster <euler> at Wed Jun 26 01:17:23 2019
+</cluster/home/jding> was used as the home directory.
+</cluster/home/jding/MultiLevelEvacuation/code> was used as the working directory.
+Started at Wed Jun 26 01:17:23 2019
+Terminated at Wed Jun 26 01:17:39 2019
+Results reported at Wed Jun 26 01:17:39 2019
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+matlab -nodisplay -singleCompThread -r A_LearningAlgorithm\(1,16,12\)
+------------------------------------------------------------
+
+TERM_OWNER: job killed by owner.
+Exited with exit code 143.
+
+Resource usage summary:
+
+    CPU time :                                   3.55 sec.
+    Max Memory :                                 151 MB
+    Average Memory :                             128.00 MB
+    Total Requested Memory :                     6144.00 MB
+    Delta Memory :                               5993.00 MB
+    Max Swap :                                   -
+    Max Processes :                              3
+    Max Threads :                                23
+    Run time :                                   29 sec.
+    Turnaround time :                            48 sec.
+
+The output (if any) follows:
+
+Terminated

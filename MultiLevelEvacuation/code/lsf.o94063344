@@ -1,0 +1,50 @@
+Sender: LSF System <lsfadmin@eu-c7-107-15>
+Subject: Job 94063344: <matlab -nodisplay -singleCompThread -r A_LearningAlgorithm\($i,16,20\)> in cluster <euler> Done
+
+Job <matlab -nodisplay -singleCompThread -r A_LearningAlgorithm\($i,16,20\)> was submitted from host <eu-login-06-ng> by user <jding> in cluster <euler> at Wed Jun 26 00:16:02 2019
+Job was executed on host(s) <eu-c7-107-15>, in queue <normal.4h>, as user <jding> in cluster <euler> at Wed Jun 26 00:16:26 2019
+</cluster/home/jding> was used as the home directory.
+</cluster/home/jding/MultiLevelEvacuation/code> was used as the working directory.
+Started at Wed Jun 26 00:16:26 2019
+Terminated at Wed Jun 26 00:16:43 2019
+Results reported at Wed Jun 26 00:16:43 2019
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+matlab -nodisplay -singleCompThread -r A_LearningAlgorithm\($i,16,20\)
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   9.19 sec.
+    Max Memory :                                 333 MB
+    Average Memory :                             23.00 MB
+    Total Requested Memory :                     512.00 MB
+    Delta Memory :                               179.00 MB
+    Max Swap :                                   -
+    Max Processes :                              3
+    Max Threads :                                8
+    Run time :                                   33 sec.
+    Turnaround time :                            41 sec.
+
+The output (if any) follows:
+
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2016 The MathWorks, Inc.
+                   R2016b (9.1.0.441655) 64-bit (glnxa64)
+                             September 7, 2016
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+ A_LearningAlgorithm(,16,20)
+                     |
+{Error: Expression or statement is incorrect--possibly unbalanced (, {, or [.
+} 
+>> 

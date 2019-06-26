@@ -1,0 +1,9612 @@
+Sender: LSF System <lsfadmin@eu-a6-005-24>
+Subject: Job 94065057: <matlab -nodisplay -singleCompThread -r A_LearningAlgorithm\(2,16,12\)> in cluster <euler> Done
+
+Job <matlab -nodisplay -singleCompThread -r A_LearningAlgorithm\(2,16,12\)> was submitted from host <eu-login-06-ng> by user <jding> in cluster <euler> at Wed Jun 26 01:42:55 2019
+Job was executed on host(s) <12*eu-a6-005-24>, in queue <normal.4h>, as user <jding> in cluster <euler> at Wed Jun 26 01:43:23 2019
+</cluster/home/jding> was used as the home directory.
+</cluster/home/jding/MultiLevelEvacuation/code> was used as the working directory.
+Started at Wed Jun 26 01:43:23 2019
+Terminated at Wed Jun 26 01:59:13 2019
+Results reported at Wed Jun 26 01:59:13 2019
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+matlab -nodisplay -singleCompThread -r A_LearningAlgorithm\(2,16,12\)
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   5549.00 sec.
+    Max Memory :                                 9104 MB
+    Average Memory :                             4804.00 MB
+    Total Requested Memory :                     6144.00 MB
+    Delta Memory :                               -2960.00 MB
+    Max Swap :                                   -
+    Max Processes :                              31
+    Max Threads :                                485
+    Run time :                                   956 sec.
+    Turnaround time :                            978 sec.
+
+The output (if any) follows:
+
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2016 The MathWorks, Inc.
+                   R2016b (9.1.0.441655) 64-bit (glnxa64)
+                             September 7, 2016
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+
+ExperimentNumber =
+
+     2
+
+
+N_it =
+
+    16
+
+
+N_children =
+
+    12
+
+
+directory =
+
+../data/Experiment2/
+
+[Warning: Directory already exists.] 
+[> In A_LearningAlgorithm (line 14)] 
+  Name        Size            Bytes  Class    Attributes
+
+  shapes      1x1               204  cell               
+
+Starting parallel pool (parpool) using the 'local' profile ... [Warning: Cannot cancel or destroy a job that was not created by this Local
+cluster.] 
+[> In parallel.cluster.Local/cancelOrDestroyJob (line 34)
+  In parallel.cluster.Local/hCancelJob (line 264)
+  In parallel.internal.cluster.CJSJobMethods.cancelOneJob (line 51)
+  In parallel.job.CJSCommunicatingJob/cancelOneJob (line 99)
+  In parallel.Job/cancel (line 1164)
+  In parallel.Cluster/hDeleteOneJob (line 847)
+  In parallel.internal.pool.InteractiveClient>iDeleteJobs (line 846)
+  In parallel.internal.pool.InteractiveClient/pStopLabsAndDisconnect (line 583)
+  In parallel.internal.pool.InteractiveClient>iCleanupIfStartupFailed (line 911)
+  In parallel.internal.pool.InteractiveClient>@()iCleanupIfStartupFailed(obj) (line 283)
+  In onCleanup/delete (line 60)
+  In parallel.internal.pool.InteractiveClient/start (line 230)
+  In parallel.Pool>iStartClient (line 567)
+  In parallel.Pool.hBuildPool (line 446)
+  In parallel.internal.pool.doParpool (line 15)
+  In parpool (line 89)
+  In parallel.internal.pool.PoolArrayManager.getOrAutoCreateWithCleanup (line 49)
+  In pctTryCreatePoolIfNecessary (line 23)
+  In distcomp.remoteparfor.tryRemoteParfor
+  In parallel_function (line 433)
+  In A_LearningAlgorithm (line 42)] 
+[Warning: Cannot cancel or destroy a job that was not created by this Local
+cluster.] 
+[> In parallel.cluster.Local/cancelOrDestroyJob (line 34)
+  In parallel.cluster.Local/hDestroyJob (line 267)
+  In parallel.internal.cluster.CJSJobMethods.destroyOneJob (line 70)
+  In parallel.job.CJSCommunicatingJob/destroyOneJob (line 94)
+  In parallel.Job/delete (line 1098)
+  In parallel.Cluster/hDeleteOneJob (line 862)
+  In parallel.internal.pool.InteractiveClient>iDeleteJobs (line 846)
+  In parallel.internal.pool.InteractiveClient/pStopLabsAndDisconnect (line 583)
+  In parallel.internal.pool.InteractiveClient>iCleanupIfStartupFailed (line 911)
+  In parallel.internal.pool.InteractiveClient>@()iCleanupIfStartupFailed(obj) (line 283)
+  In onCleanup/delete (line 60)
+  In parallel.internal.pool.InteractiveClient/start (line 230)
+  In parallel.Pool>iStartClient (line 567)
+  In parallel.Pool.hBuildPool (line 446)
+  In parallel.internal.pool.doParpool (line 15)
+  In parpool (line 89)
+  In parallel.internal.pool.PoolArrayManager.getOrAutoCreateWithCleanup (line 49)
+  In pctTryCreatePoolIfNecessary (line 23)
+  In distcomp.remoteparfor.tryRemoteParfor
+  In parallel_function (line 433)
+  In A_LearningAlgorithm (line 42)] 
+
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room12.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room12.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room12.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room12.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room11.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room11.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room11.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room11.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room10.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room10.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room10.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room10.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room9.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room9.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room9.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room9.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room8.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room8.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room8.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room8.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room7.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room7.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room7.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room7.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room6.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room6.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room6.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room6.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room5.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room5.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room5.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room5.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room4.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room4.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room4.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room4.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room3.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room3.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room3.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room3.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+WARNING: could only place 99 agents on floor 2 instead of the desired 100.
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room2.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room2.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room2.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room2.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room1.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room1.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room1.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room1.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+WARNING: could only place 99 agents on floor 2 instead of the desired 100.
+Init plots...
+Start simulation...
+Simulation done.
+
+fitness_history =
+
+  Columns 1 through 7
+
+    1.6609    1.6908    1.6623    1.6676    1.6560    1.6633    1.6449
+
+  Columns 8 through 12
+
+    1.6530    1.6604    1.6497    1.6718    1.6611
+
+Starting parallel pool (parpool) using the 'local' profile ... connected to 12 workers.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room12.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room12.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room12.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room12.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room8.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room8.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room8.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room8.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+WARNING: could only place 99 agents on floor 2 instead of the desired 100.
+Init plots...
+Start simulation...
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room7.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room7.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room7.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room7.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room2.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room2.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room2.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room2.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+WARNING: could only place 99 agents on floor 1 instead of the desired 100.
+Init plots...
+Start simulation...
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room11.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room11.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room11.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room11.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+WARNING: could only place 99 agents on floor 2 instead of the desired 100.
+Init plots...
+Start simulation...
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room5.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room5.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room5.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room5.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room1.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room1.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room1.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room1.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+WARNING: could only place 99 agents on floor 1 instead of the desired 100.
+Init plots...
+Start simulation...
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room3.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room3.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room3.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room3.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room4.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room4.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room4.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room4.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room6.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room6.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room6.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room6.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room10.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room10.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room10.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room10.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room9.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room9.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room9.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room9.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Simulation done.
+Simulation done.
+Simulation done.
+Simulation done.
+Simulation done.
+Simulation done.
+Simulation done.
+Simulation done.
+Simulation done.
+Simulation done.
+Simulation done.
+
+fitness_history =
+
+  Columns 1 through 7
+
+    1.6609    1.6908    1.6623    1.6676    1.6560    1.6633    1.6449
+    1.6719    1.6676    1.6594    1.6678    1.6505    1.6574    1.6840
+
+  Columns 8 through 12
+
+    1.6530    1.6604    1.6497    1.6718    1.6611
+    1.6640    1.6621    1.6620    1.6750    1.6650
+
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room1.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room1.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room1.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room1.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room3.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room3.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room3.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room3.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+WARNING: could only place 99 agents on floor 1 instead of the desired 100.
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room10.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room10.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room10.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room10.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room12.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room12.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room12.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room12.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+WARNING: could only place 99 agents on floor 2 instead of the desired 100.
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room7.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room7.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room7.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room7.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room11.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room11.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room11.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room11.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room9.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room9.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room9.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room9.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room4.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room4.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room4.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room4.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+WARNING: could only place 99 agents on floor 1 instead of the desired 100.
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room8.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room8.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room8.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room8.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room6.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room6.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room6.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room6.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room5.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room5.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room5.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room5.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room2.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room2.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room2.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room2.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+
+fitness_history =
+
+  Columns 1 through 7
+
+    1.6609    1.6908    1.6623    1.6676    1.6560    1.6633    1.6449
+    1.6719    1.6676    1.6594    1.6678    1.6505    1.6574    1.6840
+    1.6655    1.6616    1.6671    1.6717    1.6653    1.6638    1.6773
+
+  Columns 8 through 12
+
+    1.6530    1.6604    1.6497    1.6718    1.6611
+    1.6640    1.6621    1.6620    1.6750    1.6650
+    1.6626    1.6678    1.6800    1.6690    1.6676
+
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room3.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room3.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room3.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room3.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+WARNING: could only place 99 agents on floor 1 instead of the desired 100.
+WARNING: could only place 99 agents on floor 2 instead of the desired 100.
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room12.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room12.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room12.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room12.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room9.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room9.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room9.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room9.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+WARNING: could only place 99 agents on floor 1 instead of the desired 100.
+WARNING: could only place 99 agents on floor 2 instead of the desired 100.
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room7.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room7.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room7.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room7.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room1.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room1.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room1.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room1.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+WARNING: could only place 99 agents on floor 2 instead of the desired 100.
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room10.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room10.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room10.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room10.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room11.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room11.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room11.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room11.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room5.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room5.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room5.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room5.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+WARNING: could only place 99 agents on floor 1 instead of the desired 100.
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room4.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room4.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room4.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room4.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+WARNING: could only place 99 agents on floor 1 instead of the desired 100.
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room8.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room8.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room8.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room8.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room6.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room6.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room6.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room6.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room2.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room2.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room2.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room2.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+
+fitness_history =
+
+  Columns 1 through 7
+
+    1.6609    1.6908    1.6623    1.6676    1.6560    1.6633    1.6449
+    1.6719    1.6676    1.6594    1.6678    1.6505    1.6574    1.6840
+    1.6655    1.6616    1.6671    1.6717    1.6653    1.6638    1.6773
+    1.6679    1.6650    1.6622    1.6569    1.6684    1.6726    1.6731
+
+  Columns 8 through 12
+
+    1.6530    1.6604    1.6497    1.6718    1.6611
+    1.6640    1.6621    1.6620    1.6750    1.6650
+    1.6626    1.6678    1.6800    1.6690    1.6676
+    1.6651    1.6670    1.6862    1.6502    1.6629
+
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room12.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room12.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room12.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room12.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room1.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room1.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room1.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room1.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room11.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room11.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room11.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room11.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+WARNING: could only place 99 agents on floor 1 instead of the desired 100.
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room10.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room10.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room10.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room10.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room3.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room3.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room3.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room3.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room9.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room9.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room9.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room9.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room7.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room7.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room7.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room7.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room6.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room6.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room6.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room6.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room4.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room4.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room4.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room4.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room8.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room8.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room8.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room8.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room2.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room2.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room2.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room2.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+WARNING: could only place 99 agents on floor 1 instead of the desired 100.
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room5.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room5.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room5.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room5.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+
+fitness_history =
+
+  Columns 1 through 7
+
+    1.6609    1.6908    1.6623    1.6676    1.6560    1.6633    1.6449
+    1.6719    1.6676    1.6594    1.6678    1.6505    1.6574    1.6840
+    1.6655    1.6616    1.6671    1.6717    1.6653    1.6638    1.6773
+    1.6679    1.6650    1.6622    1.6569    1.6684    1.6726    1.6731
+    1.6552    1.6734    1.6596    1.6682    1.6793    1.6547    1.6620
+
+  Columns 8 through 12
+
+    1.6530    1.6604    1.6497    1.6718    1.6611
+    1.6640    1.6621    1.6620    1.6750    1.6650
+    1.6626    1.6678    1.6800    1.6690    1.6676
+    1.6651    1.6670    1.6862    1.6502    1.6629
+    1.6521    1.6687    1.6737    1.6689    1.6567
+
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room12.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room12.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room12.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room12.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+WARNING: could only place 99 agents on floor 2 instead of the desired 100.
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room11.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room11.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room11.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room11.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+WARNING: could only place 99 agents on floor 2 instead of the desired 100.
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room7.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room7.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room7.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room7.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room1.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room1.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room1.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room1.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room10.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room10.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room10.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room10.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room3.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room3.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room3.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room3.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room9.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room9.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room9.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room9.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room6.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room6.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room6.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room6.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room2.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room2.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room2.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room2.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+WARNING: could only place 98 agents on floor 2 instead of the desired 100.
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room8.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room8.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room8.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room8.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+WARNING: could only place 99 agents on floor 1 instead of the desired 100.
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room5.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room5.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room5.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room5.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room4.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room4.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room4.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room4.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+
+fitness_history =
+
+  Columns 1 through 7
+
+    1.6609    1.6908    1.6623    1.6676    1.6560    1.6633    1.6449
+    1.6719    1.6676    1.6594    1.6678    1.6505    1.6574    1.6840
+    1.6655    1.6616    1.6671    1.6717    1.6653    1.6638    1.6773
+    1.6679    1.6650    1.6622    1.6569    1.6684    1.6726    1.6731
+    1.6552    1.6734    1.6596    1.6682    1.6793    1.6547    1.6620
+    1.6831    1.6699    1.6631    1.6791    1.6654    1.6538    1.6741
+
+  Columns 8 through 12
+
+    1.6530    1.6604    1.6497    1.6718    1.6611
+    1.6640    1.6621    1.6620    1.6750    1.6650
+    1.6626    1.6678    1.6800    1.6690    1.6676
+    1.6651    1.6670    1.6862    1.6502    1.6629
+    1.6521    1.6687    1.6737    1.6689    1.6567
+    1.6469    1.6807    1.6580    1.6732    1.6583
+
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room11.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room11.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room11.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room11.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+WARNING: could only place 99 agents on floor 2 instead of the desired 100.
+Init plots...
+Start simulation...
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room3.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room3.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room3.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room3.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+WARNING: could only place 99 agents on floor 1 instead of the desired 100.
+WARNING: could only place 99 agents on floor 2 instead of the desired 100.
+Init plots...
+Start simulation...
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room10.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room10.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room10.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room10.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+WARNING: could only place 99 agents on floor 2 instead of the desired 100.
+Init plots...
+Start simulation...
+Simulation done.
+Simulation done.
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room1.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room1.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room1.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room1.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room12.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room12.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room12.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room12.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room7.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room7.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room7.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room7.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room9.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room9.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room9.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room9.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room4.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room4.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room4.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room4.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+WARNING: could only place 99 agents on floor 1 instead of the desired 100.
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room6.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room6.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room6.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room6.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room5.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room5.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room5.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room5.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room2.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room2.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room2.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room2.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room8.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room8.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room8.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room8.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+
+fitness_history =
+
+  Columns 1 through 7
+
+    1.6609    1.6908    1.6623    1.6676    1.6560    1.6633    1.6449
+    1.6719    1.6676    1.6594    1.6678    1.6505    1.6574    1.6840
+    1.6655    1.6616    1.6671    1.6717    1.6653    1.6638    1.6773
+    1.6679    1.6650    1.6622    1.6569    1.6684    1.6726    1.6731
+    1.6552    1.6734    1.6596    1.6682    1.6793    1.6547    1.6620
+    1.6831    1.6699    1.6631    1.6791    1.6654    1.6538    1.6741
+    1.6574    1.6555    1.6671    1.6589    1.6514    1.6585    1.6551
+
+  Columns 8 through 12
+
+    1.6530    1.6604    1.6497    1.6718    1.6611
+    1.6640    1.6621    1.6620    1.6750    1.6650
+    1.6626    1.6678    1.6800    1.6690    1.6676
+    1.6651    1.6670    1.6862    1.6502    1.6629
+    1.6521    1.6687    1.6737    1.6689    1.6567
+    1.6469    1.6807    1.6580    1.6732    1.6583
+    1.6792    1.6694    1.6760    1.6618    1.6744
+
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room3.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room3.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room3.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room3.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+WARNING: could only place 98 agents on floor 2 instead of the desired 100.
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room1.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room1.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room1.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room1.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room12.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room12.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room12.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room12.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room9.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room9.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room9.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room9.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room11.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room11.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room11.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room11.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room10.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room10.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room10.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room10.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+WARNING: could only place 99 agents on floor 1 instead of the desired 100.
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room7.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room7.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room7.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room7.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room6.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room6.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room6.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room6.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room4.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room4.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room4.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room4.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room5.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room5.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room5.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room5.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room2.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room2.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room2.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room2.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room8.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room8.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room8.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room8.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+
+fitness_history =
+
+  Columns 1 through 7
+
+    1.6609    1.6908    1.6623    1.6676    1.6560    1.6633    1.6449
+    1.6719    1.6676    1.6594    1.6678    1.6505    1.6574    1.6840
+    1.6655    1.6616    1.6671    1.6717    1.6653    1.6638    1.6773
+    1.6679    1.6650    1.6622    1.6569    1.6684    1.6726    1.6731
+    1.6552    1.6734    1.6596    1.6682    1.6793    1.6547    1.6620
+    1.6831    1.6699    1.6631    1.6791    1.6654    1.6538    1.6741
+    1.6574    1.6555    1.6671    1.6589    1.6514    1.6585    1.6551
+    1.6778    1.6764    1.6761    1.6710    1.6679    1.6710    1.6603
+
+  Columns 8 through 12
+
+    1.6530    1.6604    1.6497    1.6718    1.6611
+    1.6640    1.6621    1.6620    1.6750    1.6650
+    1.6626    1.6678    1.6800    1.6690    1.6676
+    1.6651    1.6670    1.6862    1.6502    1.6629
+    1.6521    1.6687    1.6737    1.6689    1.6567
+    1.6469    1.6807    1.6580    1.6732    1.6583
+    1.6792    1.6694    1.6760    1.6618    1.6744
+    1.6456    1.6649    1.6646    1.6625    1.6769
+
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room4.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room4.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room4.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room4.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room12.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room12.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room12.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room12.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+WARNING: could only place 99 agents on floor 1 instead of the desired 100.
+Init plots...
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room8.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room8.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room8.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room8.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room7.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room7.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room7.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room7.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room2.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room2.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room2.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room2.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+WARNING: could only place 99 agents on floor 1 instead of the desired 100.
+Init plots...
+Start simulation...
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room11.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room11.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room11.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room11.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room5.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room5.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room5.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room5.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room1.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room1.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room1.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room1.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+WARNING: could only place 99 agents on floor 1 instead of the desired 100.
+Init plots...
+Start simulation...
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room3.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room3.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room3.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room3.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room6.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room6.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room6.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room6.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room10.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room10.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room10.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room10.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room9.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room9.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room9.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room9.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Start simulation...
+Simulation done.
+Simulation done.
+Simulation done.
+Simulation done.
+Simulation done.
+Simulation done.
+Simulation done.
+Simulation done.
+Start simulation...
+Simulation done.
+Simulation done.
+Simulation done.
+
+fitness_history =
+
+  Columns 1 through 7
+
+    1.6609    1.6908    1.6623    1.6676    1.6560    1.6633    1.6449
+    1.6719    1.6676    1.6594    1.6678    1.6505    1.6574    1.6840
+    1.6655    1.6616    1.6671    1.6717    1.6653    1.6638    1.6773
+    1.6679    1.6650    1.6622    1.6569    1.6684    1.6726    1.6731
+    1.6552    1.6734    1.6596    1.6682    1.6793    1.6547    1.6620
+    1.6831    1.6699    1.6631    1.6791    1.6654    1.6538    1.6741
+    1.6574    1.6555    1.6671    1.6589    1.6514    1.6585    1.6551
+    1.6778    1.6764    1.6761    1.6710    1.6679    1.6710    1.6603
+    1.6796    1.6727    1.6767    1.6529    1.6653    1.6700    1.6843
+
+  Columns 8 through 12
+
+    1.6530    1.6604    1.6497    1.6718    1.6611
+    1.6640    1.6621    1.6620    1.6750    1.6650
+    1.6626    1.6678    1.6800    1.6690    1.6676
+    1.6651    1.6670    1.6862    1.6502    1.6629
+    1.6521    1.6687    1.6737    1.6689    1.6567
+    1.6469    1.6807    1.6580    1.6732    1.6583
+    1.6792    1.6694    1.6760    1.6618    1.6744
+    1.6456    1.6649    1.6646    1.6625    1.6769
+    1.6720    1.6764    1.6557    1.6739    1.6696
+
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room1.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room1.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room1.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room1.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+WARNING: could only place 99 agents on floor 2 instead of the desired 100.
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room7.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room7.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room7.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room7.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room3.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room3.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room3.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room3.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room10.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room10.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room10.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room10.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+WARNING: could only place 99 agents on floor 1 instead of the desired 100.
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room12.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room12.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room12.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room12.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room11.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room11.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room11.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room11.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room9.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room9.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room9.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room9.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room6.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room6.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room6.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room6.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room4.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room4.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room4.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room4.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room8.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room8.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room8.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room8.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room2.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room2.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room2.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room2.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room5.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room5.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room5.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room5.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+
+fitness_history =
+
+  Columns 1 through 7
+
+    1.6609    1.6908    1.6623    1.6676    1.6560    1.6633    1.6449
+    1.6719    1.6676    1.6594    1.6678    1.6505    1.6574    1.6840
+    1.6655    1.6616    1.6671    1.6717    1.6653    1.6638    1.6773
+    1.6679    1.6650    1.6622    1.6569    1.6684    1.6726    1.6731
+    1.6552    1.6734    1.6596    1.6682    1.6793    1.6547    1.6620
+    1.6831    1.6699    1.6631    1.6791    1.6654    1.6538    1.6741
+    1.6574    1.6555    1.6671    1.6589    1.6514    1.6585    1.6551
+    1.6778    1.6764    1.6761    1.6710    1.6679    1.6710    1.6603
+    1.6796    1.6727    1.6767    1.6529    1.6653    1.6700    1.6843
+    1.6611    1.6729    1.6621    1.6658    1.6636    1.6642    1.6692
+
+  Columns 8 through 12
+
+    1.6530    1.6604    1.6497    1.6718    1.6611
+    1.6640    1.6621    1.6620    1.6750    1.6650
+    1.6626    1.6678    1.6800    1.6690    1.6676
+    1.6651    1.6670    1.6862    1.6502    1.6629
+    1.6521    1.6687    1.6737    1.6689    1.6567
+    1.6469    1.6807    1.6580    1.6732    1.6583
+    1.6792    1.6694    1.6760    1.6618    1.6744
+    1.6456    1.6649    1.6646    1.6625    1.6769
+    1.6720    1.6764    1.6557    1.6739    1.6696
+    1.6861    1.6632    1.6512    1.6728    1.6502
+
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room7.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room7.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room7.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room7.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+WARNING: could only place 99 agents on floor 2 instead of the desired 100.
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room11.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room11.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room11.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room11.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+WARNING: could only place 99 agents on floor 2 instead of the desired 100.
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room3.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room3.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room3.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room3.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room1.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room1.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room1.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room1.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room12.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room12.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room12.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room12.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room10.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room10.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room10.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room10.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room4.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room4.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room4.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room4.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+WARNING: could only place 99 agents on floor 1 instead of the desired 100.
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room5.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room5.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room5.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room5.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room8.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room8.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room8.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room8.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room9.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room9.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room9.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room9.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room6.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room6.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room6.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room6.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room2.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room2.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room2.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room2.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+
+fitness_history =
+
+  Columns 1 through 7
+
+    1.6609    1.6908    1.6623    1.6676    1.6560    1.6633    1.6449
+    1.6719    1.6676    1.6594    1.6678    1.6505    1.6574    1.6840
+    1.6655    1.6616    1.6671    1.6717    1.6653    1.6638    1.6773
+    1.6679    1.6650    1.6622    1.6569    1.6684    1.6726    1.6731
+    1.6552    1.6734    1.6596    1.6682    1.6793    1.6547    1.6620
+    1.6831    1.6699    1.6631    1.6791    1.6654    1.6538    1.6741
+    1.6574    1.6555    1.6671    1.6589    1.6514    1.6585    1.6551
+    1.6778    1.6764    1.6761    1.6710    1.6679    1.6710    1.6603
+    1.6796    1.6727    1.6767    1.6529    1.6653    1.6700    1.6843
+    1.6611    1.6729    1.6621    1.6658    1.6636    1.6642    1.6692
+    1.6597    1.6556    1.6672    1.6667    1.6698    1.6648    1.6662
+
+  Columns 8 through 12
+
+    1.6530    1.6604    1.6497    1.6718    1.6611
+    1.6640    1.6621    1.6620    1.6750    1.6650
+    1.6626    1.6678    1.6800    1.6690    1.6676
+    1.6651    1.6670    1.6862    1.6502    1.6629
+    1.6521    1.6687    1.6737    1.6689    1.6567
+    1.6469    1.6807    1.6580    1.6732    1.6583
+    1.6792    1.6694    1.6760    1.6618    1.6744
+    1.6456    1.6649    1.6646    1.6625    1.6769
+    1.6720    1.6764    1.6557    1.6739    1.6696
+    1.6861    1.6632    1.6512    1.6728    1.6502
+    1.6540    1.6834    1.6562    1.6629    1.6677
+
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room1.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room1.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room1.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room1.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room7.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room7.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room7.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room7.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room11.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room11.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room11.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room11.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room9.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room9.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room9.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room9.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room3.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room3.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room3.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room3.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room12.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room12.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room12.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room12.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room10.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room10.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room10.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room10.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room6.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room6.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room6.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room6.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room4.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room4.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room4.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room4.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room2.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room2.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room2.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room2.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room5.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room5.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room5.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room5.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room8.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room8.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room8.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room8.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+
+fitness_history =
+
+  Columns 1 through 7
+
+    1.6609    1.6908    1.6623    1.6676    1.6560    1.6633    1.6449
+    1.6719    1.6676    1.6594    1.6678    1.6505    1.6574    1.6840
+    1.6655    1.6616    1.6671    1.6717    1.6653    1.6638    1.6773
+    1.6679    1.6650    1.6622    1.6569    1.6684    1.6726    1.6731
+    1.6552    1.6734    1.6596    1.6682    1.6793    1.6547    1.6620
+    1.6831    1.6699    1.6631    1.6791    1.6654    1.6538    1.6741
+    1.6574    1.6555    1.6671    1.6589    1.6514    1.6585    1.6551
+    1.6778    1.6764    1.6761    1.6710    1.6679    1.6710    1.6603
+    1.6796    1.6727    1.6767    1.6529    1.6653    1.6700    1.6843
+    1.6611    1.6729    1.6621    1.6658    1.6636    1.6642    1.6692
+    1.6597    1.6556    1.6672    1.6667    1.6698    1.6648    1.6662
+    1.6779    1.6876    1.6527    1.6597    1.6657    1.6573    1.6628
+
+  Columns 8 through 12
+
+    1.6530    1.6604    1.6497    1.6718    1.6611
+    1.6640    1.6621    1.6620    1.6750    1.6650
+    1.6626    1.6678    1.6800    1.6690    1.6676
+    1.6651    1.6670    1.6862    1.6502    1.6629
+    1.6521    1.6687    1.6737    1.6689    1.6567
+    1.6469    1.6807    1.6580    1.6732    1.6583
+    1.6792    1.6694    1.6760    1.6618    1.6744
+    1.6456    1.6649    1.6646    1.6625    1.6769
+    1.6720    1.6764    1.6557    1.6739    1.6696
+    1.6861    1.6632    1.6512    1.6728    1.6502
+    1.6540    1.6834    1.6562    1.6629    1.6677
+    1.6681    1.6536    1.6595    1.6685    1.6475
+
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room1.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room1.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room1.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room1.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+WARNING: could only place 99 agents on floor 1 instead of the desired 100.
+WARNING: could only place 99 agents on floor 2 instead of the desired 100.
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room11.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room11.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room11.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room11.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+WARNING: could only place 99 agents on floor 2 instead of the desired 100.
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room7.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room7.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room7.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room7.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room10.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room10.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room10.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room10.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room12.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room12.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room12.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room12.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room9.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room9.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room9.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room9.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room3.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room3.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room3.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room3.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room5.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room5.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room5.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room5.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room6.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room6.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room6.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room6.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room4.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room4.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room4.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room4.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+WARNING: could only place 99 agents on floor 2 instead of the desired 100.
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room8.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room8.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room8.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room8.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room2.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room2.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room2.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room2.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+WARNING: could only place 99 agents on floor 2 instead of the desired 100.
+Init plots...
+Start simulation...
+Simulation done.
+
+fitness_history =
+
+  Columns 1 through 7
+
+    1.6609    1.6908    1.6623    1.6676    1.6560    1.6633    1.6449
+    1.6719    1.6676    1.6594    1.6678    1.6505    1.6574    1.6840
+    1.6655    1.6616    1.6671    1.6717    1.6653    1.6638    1.6773
+    1.6679    1.6650    1.6622    1.6569    1.6684    1.6726    1.6731
+    1.6552    1.6734    1.6596    1.6682    1.6793    1.6547    1.6620
+    1.6831    1.6699    1.6631    1.6791    1.6654    1.6538    1.6741
+    1.6574    1.6555    1.6671    1.6589    1.6514    1.6585    1.6551
+    1.6778    1.6764    1.6761    1.6710    1.6679    1.6710    1.6603
+    1.6796    1.6727    1.6767    1.6529    1.6653    1.6700    1.6843
+    1.6611    1.6729    1.6621    1.6658    1.6636    1.6642    1.6692
+    1.6597    1.6556    1.6672    1.6667    1.6698    1.6648    1.6662
+    1.6779    1.6876    1.6527    1.6597    1.6657    1.6573    1.6628
+    1.6650    1.6668    1.6739    1.6618    1.6663    1.6598    1.6534
+
+  Columns 8 through 12
+
+    1.6530    1.6604    1.6497    1.6718    1.6611
+    1.6640    1.6621    1.6620    1.6750    1.6650
+    1.6626    1.6678    1.6800    1.6690    1.6676
+    1.6651    1.6670    1.6862    1.6502    1.6629
+    1.6521    1.6687    1.6737    1.6689    1.6567
+    1.6469    1.6807    1.6580    1.6732    1.6583
+    1.6792    1.6694    1.6760    1.6618    1.6744
+    1.6456    1.6649    1.6646    1.6625    1.6769
+    1.6720    1.6764    1.6557    1.6739    1.6696
+    1.6861    1.6632    1.6512    1.6728    1.6502
+    1.6540    1.6834    1.6562    1.6629    1.6677
+    1.6681    1.6536    1.6595    1.6685    1.6475
+    1.6708    1.6629    1.6532    1.6657    1.6684
+
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room10.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room10.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room10.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room10.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+WARNING: could only place 99 agents on floor 1 instead of the desired 100.
+WARNING: could only place 99 agents on floor 2 instead of the desired 100.
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room12.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room12.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room12.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room12.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room11.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room11.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room11.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room11.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room1.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room1.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room1.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room1.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room3.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room3.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room3.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room3.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room6.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room6.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room6.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room6.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room9.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room9.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room9.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room9.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room7.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room7.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room7.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room7.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room8.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room8.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room8.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room8.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room5.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room5.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room5.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room5.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room4.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room4.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room4.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room4.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room2.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room2.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room2.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room2.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+
+fitness_history =
+
+  Columns 1 through 7
+
+    1.6609    1.6908    1.6623    1.6676    1.6560    1.6633    1.6449
+    1.6719    1.6676    1.6594    1.6678    1.6505    1.6574    1.6840
+    1.6655    1.6616    1.6671    1.6717    1.6653    1.6638    1.6773
+    1.6679    1.6650    1.6622    1.6569    1.6684    1.6726    1.6731
+    1.6552    1.6734    1.6596    1.6682    1.6793    1.6547    1.6620
+    1.6831    1.6699    1.6631    1.6791    1.6654    1.6538    1.6741
+    1.6574    1.6555    1.6671    1.6589    1.6514    1.6585    1.6551
+    1.6778    1.6764    1.6761    1.6710    1.6679    1.6710    1.6603
+    1.6796    1.6727    1.6767    1.6529    1.6653    1.6700    1.6843
+    1.6611    1.6729    1.6621    1.6658    1.6636    1.6642    1.6692
+    1.6597    1.6556    1.6672    1.6667    1.6698    1.6648    1.6662
+    1.6779    1.6876    1.6527    1.6597    1.6657    1.6573    1.6628
+    1.6650    1.6668    1.6739    1.6618    1.6663    1.6598    1.6534
+    1.6554    1.6591    1.6663    1.6604    1.6535    1.6747    1.6432
+
+  Columns 8 through 12
+
+    1.6530    1.6604    1.6497    1.6718    1.6611
+    1.6640    1.6621    1.6620    1.6750    1.6650
+    1.6626    1.6678    1.6800    1.6690    1.6676
+    1.6651    1.6670    1.6862    1.6502    1.6629
+    1.6521    1.6687    1.6737    1.6689    1.6567
+    1.6469    1.6807    1.6580    1.6732    1.6583
+    1.6792    1.6694    1.6760    1.6618    1.6744
+    1.6456    1.6649    1.6646    1.6625    1.6769
+    1.6720    1.6764    1.6557    1.6739    1.6696
+    1.6861    1.6632    1.6512    1.6728    1.6502
+    1.6540    1.6834    1.6562    1.6629    1.6677
+    1.6681    1.6536    1.6595    1.6685    1.6475
+    1.6708    1.6629    1.6532    1.6657    1.6684
+    1.6741    1.6799    1.6501    1.6683    1.6512
+
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room6.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room6.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room6.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room6.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room7.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room7.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room7.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room7.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room1.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room1.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room1.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room1.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+WARNING: could only place 99 agents on floor 2 instead of the desired 100.
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room12.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room12.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room12.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room12.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room11.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room11.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room11.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room11.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+WARNING: could only place 99 agents on floor 1 instead of the desired 100.
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room10.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room10.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room10.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room10.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room3.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room3.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room3.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room3.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room9.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room9.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room9.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room9.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room4.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room4.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room4.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room4.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+WARNING: could only place 99 agents on floor 2 instead of the desired 100.
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room8.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room8.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room8.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room8.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+WARNING: could only place 99 agents on floor 1 instead of the desired 100.
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room5.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room5.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room5.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room5.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room2.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room2.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room2.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room2.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+
+fitness_history =
+
+  Columns 1 through 7
+
+    1.6609    1.6908    1.6623    1.6676    1.6560    1.6633    1.6449
+    1.6719    1.6676    1.6594    1.6678    1.6505    1.6574    1.6840
+    1.6655    1.6616    1.6671    1.6717    1.6653    1.6638    1.6773
+    1.6679    1.6650    1.6622    1.6569    1.6684    1.6726    1.6731
+    1.6552    1.6734    1.6596    1.6682    1.6793    1.6547    1.6620
+    1.6831    1.6699    1.6631    1.6791    1.6654    1.6538    1.6741
+    1.6574    1.6555    1.6671    1.6589    1.6514    1.6585    1.6551
+    1.6778    1.6764    1.6761    1.6710    1.6679    1.6710    1.6603
+    1.6796    1.6727    1.6767    1.6529    1.6653    1.6700    1.6843
+    1.6611    1.6729    1.6621    1.6658    1.6636    1.6642    1.6692
+    1.6597    1.6556    1.6672    1.6667    1.6698    1.6648    1.6662
+    1.6779    1.6876    1.6527    1.6597    1.6657    1.6573    1.6628
+    1.6650    1.6668    1.6739    1.6618    1.6663    1.6598    1.6534
+    1.6554    1.6591    1.6663    1.6604    1.6535    1.6747    1.6432
+    1.6726    1.6721    1.6803    1.6389    1.6567    1.6699    1.6546
+
+  Columns 8 through 12
+
+    1.6530    1.6604    1.6497    1.6718    1.6611
+    1.6640    1.6621    1.6620    1.6750    1.6650
+    1.6626    1.6678    1.6800    1.6690    1.6676
+    1.6651    1.6670    1.6862    1.6502    1.6629
+    1.6521    1.6687    1.6737    1.6689    1.6567
+    1.6469    1.6807    1.6580    1.6732    1.6583
+    1.6792    1.6694    1.6760    1.6618    1.6744
+    1.6456    1.6649    1.6646    1.6625    1.6769
+    1.6720    1.6764    1.6557    1.6739    1.6696
+    1.6861    1.6632    1.6512    1.6728    1.6502
+    1.6540    1.6834    1.6562    1.6629    1.6677
+    1.6681    1.6536    1.6595    1.6685    1.6475
+    1.6708    1.6629    1.6532    1.6657    1.6684
+    1.6741    1.6799    1.6501    1.6683    1.6512
+    1.6681    1.6728    1.6669    1.6593    1.6591
+
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room1.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room1.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room1.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room1.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room12.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room12.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room12.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room12.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+WARNING: could only place 99 agents on floor 2 instead of the desired 100.
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room11.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room11.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room11.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room11.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+WARNING: could only place 99 agents on floor 2 instead of the desired 100.
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room7.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room7.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room7.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room7.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room9.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room9.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room9.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room9.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room10.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room10.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room10.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room10.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room8.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room8.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room8.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room8.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room6.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room6.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room6.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room6.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+WARNING: could only place 99 agents on floor 1 instead of the desired 100.
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room4.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room4.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room4.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room4.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+WARNING: could only place 99 agents on floor 2 instead of the desired 100.
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room3.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room3.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room3.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room3.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room5.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room5.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room5.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room5.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Experiment2/Room2.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment2/Room2.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment2/Room2.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment2/Room2.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+
+fitness_history =
+
+  Columns 1 through 7
+
+    1.6609    1.6908    1.6623    1.6676    1.6560    1.6633    1.6449
+    1.6719    1.6676    1.6594    1.6678    1.6505    1.6574    1.6840
+    1.6655    1.6616    1.6671    1.6717    1.6653    1.6638    1.6773
+    1.6679    1.6650    1.6622    1.6569    1.6684    1.6726    1.6731
+    1.6552    1.6734    1.6596    1.6682    1.6793    1.6547    1.6620
+    1.6831    1.6699    1.6631    1.6791    1.6654    1.6538    1.6741
+    1.6574    1.6555    1.6671    1.6589    1.6514    1.6585    1.6551
+    1.6778    1.6764    1.6761    1.6710    1.6679    1.6710    1.6603
+    1.6796    1.6727    1.6767    1.6529    1.6653    1.6700    1.6843
+    1.6611    1.6729    1.6621    1.6658    1.6636    1.6642    1.6692
+    1.6597    1.6556    1.6672    1.6667    1.6698    1.6648    1.6662
+    1.6779    1.6876    1.6527    1.6597    1.6657    1.6573    1.6628
+    1.6650    1.6668    1.6739    1.6618    1.6663    1.6598    1.6534
+    1.6554    1.6591    1.6663    1.6604    1.6535    1.6747    1.6432
+    1.6726    1.6721    1.6803    1.6389    1.6567    1.6699    1.6546
+    1.6675    1.6519    1.6593    1.6803    1.6568    1.6566    1.6440
+
+  Columns 8 through 12
+
+    1.6530    1.6604    1.6497    1.6718    1.6611
+    1.6640    1.6621    1.6620    1.6750    1.6650
+    1.6626    1.6678    1.6800    1.6690    1.6676
+    1.6651    1.6670    1.6862    1.6502    1.6629
+    1.6521    1.6687    1.6737    1.6689    1.6567
+    1.6469    1.6807    1.6580    1.6732    1.6583
+    1.6792    1.6694    1.6760    1.6618    1.6744
+    1.6456    1.6649    1.6646    1.6625    1.6769
+    1.6720    1.6764    1.6557    1.6739    1.6696
+    1.6861    1.6632    1.6512    1.6728    1.6502
+    1.6540    1.6834    1.6562    1.6629    1.6677
+    1.6681    1.6536    1.6595    1.6685    1.6475
+    1.6708    1.6629    1.6532    1.6657    1.6684
+    1.6741    1.6799    1.6501    1.6683    1.6512
+    1.6681    1.6728    1.6669    1.6593    1.6591
+    1.6712    1.6629    1.6800    1.6697    1.6626
+
+>> 

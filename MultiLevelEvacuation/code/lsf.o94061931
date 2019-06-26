@@ -1,0 +1,52 @@
+Sender: LSF System <lsfadmin@eu-a6-012-12>
+Subject: Job 94061931: <matlab -nodisplay -singleCompThread -r A_LearningAlgorithm\(i,16,20\)> in cluster <euler> Done
+
+Job <matlab -nodisplay -singleCompThread -r A_LearningAlgorithm\(i,16,20\)> was submitted from host <eu-login-06-ng> by user <jding> in cluster <euler> at Tue Jun 25 23:56:09 2019
+Job was executed on host(s) <12*eu-a6-012-12>, in queue <normal.4h>, as user <jding> in cluster <euler> at Tue Jun 25 23:56:26 2019
+</cluster/home/jding> was used as the home directory.
+</cluster/home/jding/MultiLevelEvacuation/code> was used as the working directory.
+Started at Tue Jun 25 23:56:26 2019
+Terminated at Tue Jun 25 23:56:59 2019
+Results reported at Tue Jun 25 23:56:59 2019
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+matlab -nodisplay -singleCompThread -r A_LearningAlgorithm\(i,16,20\)
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   9.67 sec.
+    Max Memory :                                 670 MB
+    Average Memory :                             155.00 MB
+    Total Requested Memory :                     6144.00 MB
+    Delta Memory :                               5474.00 MB
+    Max Swap :                                   -
+    Max Processes :                              3
+    Max Threads :                                6
+    Run time :                                   49 sec.
+    Turnaround time :                            50 sec.
+
+The output (if any) follows:
+
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2016 The MathWorks, Inc.
+                   R2016b (9.1.0.441655) 64-bit (glnxa64)
+                             September 7, 2016
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+{Output argument "shapes" (and maybe others) not assigned during call to
+"getShapePaths".
+
+Error in A_LearningAlgorithm (line 10)
+shapes = getShapePaths(ExperimentNumber);
+} 
+>> 

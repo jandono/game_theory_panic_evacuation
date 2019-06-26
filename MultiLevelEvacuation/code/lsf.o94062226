@@ -1,0 +1,67 @@
+Sender: LSF System <lsfadmin@eu-c7-105-11>
+Subject: Job 94062226: <matlab -nodisplay -singleCompThread -r A_LearningAlgorithm\(i,16,20\)> in cluster <euler> Done
+
+Job <matlab -nodisplay -singleCompThread -r A_LearningAlgorithm\(i,16,20\)> was submitted from host <eu-login-06-ng> by user <jding> in cluster <euler> at Wed Jun 26 00:09:29 2019
+Job was executed on host(s) <12*eu-c7-105-11>, in queue <normal.4h>, as user <jding> in cluster <euler> at Wed Jun 26 00:09:56 2019
+</cluster/home/jding> was used as the home directory.
+</cluster/home/jding/MultiLevelEvacuation/code> was used as the working directory.
+Started at Wed Jun 26 00:09:56 2019
+Terminated at Wed Jun 26 00:10:14 2019
+Results reported at Wed Jun 26 00:10:14 2019
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+matlab -nodisplay -singleCompThread -r A_LearningAlgorithm\(i,16,20\)
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   10.57 sec.
+    Max Memory :                                 318 MB
+    Average Memory :                             21.00 MB
+    Total Requested Memory :                     6144.00 MB
+    Delta Memory :                               5826.00 MB
+    Max Swap :                                   -
+    Max Processes :                              3
+    Max Threads :                                8
+    Run time :                                   20 sec.
+    Turnaround time :                            45 sec.
+
+The output (if any) follows:
+
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2016 The MathWorks, Inc.
+                   R2016b (9.1.0.441655) 64-bit (glnxa64)
+                             September 7, 2016
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+
+ExperimentNumber =
+
+   0.0000 + 1.0000i
+
+
+N_it =
+
+    16
+
+
+N_children =
+
+    20
+
+{Output argument "shapes" (and maybe others) not assigned during call to
+"getShapePaths".
+
+Error in A_LearningAlgorithm (line 13)
+shapes = getShapePaths(ExperimentNumber);
+} 
+>> 

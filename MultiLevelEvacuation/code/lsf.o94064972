@@ -1,0 +1,774 @@
+Sender: LSF System <lsfadmin@eu-c7-110-04>
+Subject: Job 94064972: <matlab -nodisplay -singleCompThread -r A_LearningAlgorithm\(1,16,12\)> in cluster <euler> Done
+
+Job <matlab -nodisplay -singleCompThread -r A_LearningAlgorithm\(1,16,12\)> was submitted from host <eu-login-06-ng> by user <jding> in cluster <euler> at Wed Jun 26 01:39:28 2019
+Job was executed on host(s) <12*eu-c7-110-04>, in queue <normal.4h>, as user <jding> in cluster <euler> at Wed Jun 26 01:39:53 2019
+</cluster/home/jding> was used as the home directory.
+</cluster/home/jding/MultiLevelEvacuation/code> was used as the working directory.
+Started at Wed Jun 26 01:39:53 2019
+Terminated at Wed Jun 26 01:41:41 2019
+Results reported at Wed Jun 26 01:41:41 2019
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+matlab -nodisplay -singleCompThread -r A_LearningAlgorithm\(1,16,12\)
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   656.00 sec.
+    Max Memory :                                 5238 MB
+    Average Memory :                             3365.50 MB
+    Total Requested Memory :                     6144.00 MB
+    Delta Memory :                               906.00 MB
+    Max Swap :                                   -
+    Max Processes :                              31
+    Max Threads :                                485
+    Run time :                                   132 sec.
+    Turnaround time :                            133 sec.
+
+The output (if any) follows:
+
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2016 The MathWorks, Inc.
+                   R2016b (9.1.0.441655) 64-bit (glnxa64)
+                             September 7, 2016
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+
+ExperimentNumber =
+
+     1
+
+
+N_it =
+
+    16
+
+
+N_children =
+
+    12
+
+
+directory =
+
+../data/Experiment1/
+
+[Warning: Directory already exists.] 
+[> In A_LearningAlgorithm (line 14)] 
+  Name        Size            Bytes  Class    Attributes
+
+  shapes      1x1               202  cell               
+
+Starting parallel pool (parpool) using the 'local' profile ... [Warning: The cluster failed to cancel the job execution. The error was: Unable
+to read file
+'/cluster/home/jding/.matlab/local_cluster_jobs/R2016b/Job11.in.mat'. No such
+file or directory.] 
+[> In parallel.internal.cluster.CJSJobMethods.cancelOneJob (line 53)
+  In parallel.job.CJSCommunicatingJob/cancelOneJob (line 99)
+  In parallel.Job/cancel (line 1164)
+  In parallel.Cluster/hDeleteOneJob (line 847)
+  In parallel.internal.pool.InteractiveClient>iDeleteJobs (line 846)
+  In parallel.internal.pool.InteractiveClient/pRemoveOldJobs (line 471)
+  In parallel.internal.pool.InteractiveClient/start (line 311)
+  In parallel.Pool>iStartClient (line 567)
+  In parallel.Pool.hBuildPool (line 446)
+  In parallel.internal.pool.doParpool (line 15)
+  In parpool (line 89)
+  In parallel.internal.pool.PoolArrayManager.getOrAutoCreateWithCleanup (line 49)
+  In pctTryCreatePoolIfNecessary (line 23)
+  In distcomp.remoteparfor.tryRemoteParfor
+  In parallel_function (line 433)
+  In A_LearningAlgorithm (line 42)] 
+[Warning: The cluster reported an error while deleting an unavailable job.  This
+job may already have been deleted.] 
+[> In parallel.internal.cluster.CJSJobMethods.destroyOneJob (line 76)
+  In parallel.job.CJSCommunicatingJob/destroyOneJob (line 94)
+  In parallel.Job/delete (line 1098)
+  In parallel.Cluster/hDeleteOneJob (line 862)
+  In parallel.internal.pool.InteractiveClient>iDeleteJobs (line 846)
+  In parallel.internal.pool.InteractiveClient/pRemoveOldJobs (line 471)
+  In parallel.internal.pool.InteractiveClient/start (line 311)
+  In parallel.Pool>iStartClient (line 567)
+  In parallel.Pool.hBuildPool (line 446)
+  In parallel.internal.pool.doParpool (line 15)
+  In parpool (line 89)
+  In parallel.internal.pool.PoolArrayManager.getOrAutoCreateWithCleanup (line 49)
+  In pctTryCreatePoolIfNecessary (line 23)
+  In distcomp.remoteparfor.tryRemoteParfor
+  In parallel_function (line 433)
+  In A_LearningAlgorithm (line 42)] 
+[Warning: The cluster failed to cancel the job execution. The error was: Unable
+to read file
+'/cluster/home/jding/.matlab/local_cluster_jobs/R2016b/Job12.in.mat'. No such
+file or directory.] 
+[> In parallel.internal.cluster.CJSJobMethods.cancelOneJob (line 53)
+  In parallel.job.CJSCommunicatingJob/cancelOneJob (line 99)
+  In parallel.Job/cancel (line 1164)
+  In parallel.Cluster/hDeleteOneJob (line 847)
+  In parallel.internal.pool.InteractiveClient>iDeleteJobs (line 846)
+  In parallel.internal.pool.InteractiveClient/pRemoveOldJobs (line 471)
+  In parallel.internal.pool.InteractiveClient/start (line 311)
+  In parallel.Pool>iStartClient (line 567)
+  In parallel.Pool.hBuildPool (line 446)
+  In parallel.internal.pool.doParpool (line 15)
+  In parpool (line 89)
+  In parallel.internal.pool.PoolArrayManager.getOrAutoCreateWithCleanup (line 49)
+  In pctTryCreatePoolIfNecessary (line 23)
+  In distcomp.remoteparfor.tryRemoteParfor
+  In parallel_function (line 433)
+  In A_LearningAlgorithm (line 42)] 
+[Warning: The cluster reported an error while deleting an unavailable job.  This
+job may already have been deleted.] 
+[> In parallel.internal.cluster.CJSJobMethods.destroyOneJob (line 76)
+  In parallel.job.CJSCommunicatingJob/destroyOneJob (line 94)
+  In parallel.Job/delete (line 1098)
+  In parallel.Cluster/hDeleteOneJob (line 862)
+  In parallel.internal.pool.InteractiveClient>iDeleteJobs (line 846)
+  In parallel.internal.pool.InteractiveClient/pRemoveOldJobs (line 471)
+  In parallel.internal.pool.InteractiveClient/start (line 311)
+  In parallel.Pool>iStartClient (line 567)
+  In parallel.Pool.hBuildPool (line 446)
+  In parallel.internal.pool.doParpool (line 15)
+  In parpool (line 89)
+  In parallel.internal.pool.PoolArrayManager.getOrAutoCreateWithCleanup (line 49)
+  In pctTryCreatePoolIfNecessary (line 23)
+  In distcomp.remoteparfor.tryRemoteParfor
+  In parallel_function (line 433)
+  In A_LearningAlgorithm (line 42)] 
+[Warning: The cluster failed to cancel the job execution. The error was: Unable
+to read file
+'/cluster/home/jding/.matlab/local_cluster_jobs/R2016b/Job13.in.mat'. No such
+file or directory.] 
+[> In parallel.internal.cluster.CJSJobMethods.cancelOneJob (line 53)
+  In parallel.job.CJSCommunicatingJob/cancelOneJob (line 99)
+  In parallel.Job/cancel (line 1164)
+  In parallel.Cluster/hDeleteOneJob (line 847)
+  In parallel.internal.pool.InteractiveClient>iDeleteJobs (line 846)
+  In parallel.internal.pool.InteractiveClient/pRemoveOldJobs (line 471)
+  In parallel.internal.pool.InteractiveClient/start (line 311)
+  In parallel.Pool>iStartClient (line 567)
+  In parallel.Pool.hBuildPool (line 446)
+  In parallel.internal.pool.doParpool (line 15)
+  In parpool (line 89)
+  In parallel.internal.pool.PoolArrayManager.getOrAutoCreateWithCleanup (line 49)
+  In pctTryCreatePoolIfNecessary (line 23)
+  In distcomp.remoteparfor.tryRemoteParfor
+  In parallel_function (line 433)
+  In A_LearningAlgorithm (line 42)] 
+[Warning: The cluster reported an error while deleting an unavailable job.  This
+job may already have been deleted.] 
+[> In parallel.internal.cluster.CJSJobMethods.destroyOneJob (line 76)
+  In parallel.job.CJSCommunicatingJob/destroyOneJob (line 94)
+  In parallel.Job/delete (line 1098)
+  In parallel.Cluster/hDeleteOneJob (line 862)
+  In parallel.internal.pool.InteractiveClient>iDeleteJobs (line 846)
+  In parallel.internal.pool.InteractiveClient/pRemoveOldJobs (line 471)
+  In parallel.internal.pool.InteractiveClient/start (line 311)
+  In parallel.Pool>iStartClient (line 567)
+  In parallel.Pool.hBuildPool (line 446)
+  In parallel.internal.pool.doParpool (line 15)
+  In parpool (line 89)
+  In parallel.internal.pool.PoolArrayManager.getOrAutoCreateWithCleanup (line 49)
+  In pctTryCreatePoolIfNecessary (line 23)
+  In distcomp.remoteparfor.tryRemoteParfor
+  In parallel_function (line 433)
+  In A_LearningAlgorithm (line 42)] 
+connected to 12 workers.
+Load config file...
+
+file_name =
+
+../data/Experiment1/Room11.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment1/Room11.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment1/Room11.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment1/Room11.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+WARNING: could only place 99 agents on floor 1 instead of the desired 100.
+Init plots...
+Load config file...
+
+file_name =
+
+../data/Experiment1/Room4.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment1/Room4.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment1/Room4.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment1/Room4.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+WARNING: could only place 99 agents on floor 2 instead of the desired 100.
+Init plots...
+Load config file...
+
+file_name =
+
+../data/Experiment1/Room2.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment1/Room2.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment1/Room2.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment1/Room2.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Load config file...
+
+file_name =
+
+../data/Experiment1/Room1.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment1/Room1.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment1/Room1.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment1/Room1.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Load config file...
+
+file_name =
+
+../data/Experiment1/Room9.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment1/Room9.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment1/Room9.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment1/Room9.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Load config file...
+
+file_name =
+
+../data/Experiment1/Room7.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment1/Room7.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment1/Room7.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment1/Room7.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Load config file...
+
+file_name =
+
+../data/Experiment1/Room10.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment1/Room10.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment1/Room10.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment1/Room10.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+WARNING: could only place 99 agents on floor 2 instead of the desired 100.
+Init plots...
+Start simulation...
+Load config file...
+
+file_name =
+
+../data/Experiment1/Room5.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment1/Room5.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment1/Room5.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment1/Room5.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Start simulation...
+Start simulation...
+Load config file...
+
+file_name =
+
+../data/Experiment1/Room3.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment1/Room3.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment1/Room3.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment1/Room3.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Start simulation...
+Load config file...
+
+file_name =
+
+../data/Experiment1/Room12.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment1/Room12.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment1/Room12.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment1/Room12.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Start simulation...
+Start simulation...
+Load config file...
+
+file_name =
+
+../data/Experiment1/Room6.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment1/Room6.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment1/Room6.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment1/Room6.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Load config file...
+
+file_name =
+
+../data/Experiment1/Room8.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Experiment1/Room8.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Experiment1/Room8.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Experiment1/Room8.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+WARNING: could only place 99 agents on floor 1 instead of the desired 100.
+Init plots...
+Start simulation...
+Simulation done.
+Simulation done.
+Simulation done.
+Simulation done.
+Simulation done.
+Simulation done.
+Simulation done.
+Simulation done.
+Simulation done.
+Simulation done.
+Simulation done.
+Simulation done.
+
+fitness_history =
+
+  Columns 1 through 7
+
+    1.7471    1.7437    1.7471    1.7476    1.7529    1.7378    1.7394
+
+  Columns 8 through 12
+
+    1.7513    1.7426    1.7457    1.7521    1.7530
+
+{Not enough input arguments.
+
+Error in A_nextGeneration (line 19)
+    obj_filename = strcat(directory,'Geom',num2str(k),'.mat'); % Parent Path
+
+Error in A_LearningAlgorithm (line 59)
+    A_nextGeneration(fitness,N_children,filename_original_picture)
+} 
+>> 

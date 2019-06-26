@@ -6,14 +6,20 @@ function A_LearningAlgorithm(ExperimentNumber,N_it,N_children)
 % 1 Set the initial conditions for everybody
 filename = '../data/InitialRooms/Basic_Room.png';
 filename_original_picture = filename;
+ExperimentNumber
+N_it
+N_children
+directory=strcat('../data/Experiment',num2str(ExperimentNumber),'/');
+directory
+mkdir(directory)
 %shapes = {'../data/shape.conf','../data/shape2.conf','../data/shape3.conf'};
 shapes = getShapePaths(ExperimentNumber);
 whos shapes
 [geom,room_k] = read_objects(shapes,filename);
 for k=1:N_children
-    filename = strcat('../data/Room',num2str(k),'.png');
+    filename = strcat(directory,'Room',num2str(k),'.png');
     imwrite(room_k,filename);
-    obj_filename = strcat('../data/Geom',num2str(k),'.mat');
+    obj_filename = strcat(directory,'Geom',num2str(k),'.mat');
     save(obj_filename,'geom')
 end
 
@@ -24,6 +30,7 @@ imshow('../data/Room2.png');
 load obj_filename;
 geom.triangles
 %}
+fitness_history=[];
 
 for it=1:N_it
     
@@ -33,14 +40,14 @@ for it=1:N_it
     %  fitness vector (-> simulate ~line 43)
     fitness = zeros(1,N_children);
     parfor child = 1:N_children
-        filename = strcat('../data/Room',num2str(child),'.png');
+        filename = strcat(directory,'Room',num2str(child),'.png');
         %room_picture = imread(filename);
         %imwrite(room_picture,'../data/config1_1_build.png');
         fitness_child = simulate(0,filename)
         fitness(child) = fitness_child;
     end
     
-    fitness
+    fitness_history=[fitness_history;fitness]
     
     %{
     for child = 1:N_children
@@ -49,5 +56,13 @@ for it=1:N_it
     end
     %}
     
-    A_nextGeneration(fitness,N_children,filename_original_picture)
+    A_nextGeneration(fitness,N_children,filename_original_picture,directory)
 end;
+
+
+[value,index]=max(fitness);
+best_img=imread(strcat(directory,'Room',num2str(index),'.png'));
+save(strcat(directory,'fitness_history_',num2str(ExperimentNumber),'_',num2str(N_it),'_',num2str(N_children),'.mat'),'fitness_history');
+save(strcat(directory,'best_image_',num2str(ExperimentNumber),'_',num2str(N_it),'_',num2str(N_children),'.mat'),'best_img');
+end
+

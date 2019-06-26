@@ -1,0 +1,316 @@
+Sender: LSF System <lsfadmin@eu-c7-108-16>
+Subject: Job 94063951: <matlab -nodisplay -singleCompThread -r A_LearningAlgorithm\(1,16,20\)> in cluster <euler> Exited
+
+Job <matlab -nodisplay -singleCompThread -r A_LearningAlgorithm\(1,16,20\)> was submitted from host <eu-login-06-ng> by user <jding> in cluster <euler> at Wed Jun 26 00:43:49 2019
+Job was executed on host(s) <eu-c7-108-16>, in queue <normal.4h>, as user <jding> in cluster <euler> at Wed Jun 26 00:43:56 2019
+</cluster/home/jding> was used as the home directory.
+</cluster/home/jding/MultiLevelEvacuation/code> was used as the working directory.
+Started at Wed Jun 26 00:43:56 2019
+Terminated at Wed Jun 26 00:47:11 2019
+Results reported at Wed Jun 26 00:47:11 2019
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+matlab -nodisplay -singleCompThread -r A_LearningAlgorithm\(1,16,20\)
+------------------------------------------------------------
+
+TERM_OWNER: job killed by owner.
+Exited with signal termination: 14.
+
+Resource usage summary:
+
+    CPU time :                                   168.67 sec.
+    Max Memory :                                 978 MB
+    Average Memory :                             844.11 MB
+    Total Requested Memory :                     512.00 MB
+    Delta Memory :                               -466.00 MB
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                33
+    Run time :                                   220 sec.
+    Turnaround time :                            202 sec.
+
+The output (if any) follows:
+
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2016 The MathWorks, Inc.
+                   R2016b (9.1.0.441655) 64-bit (glnxa64)
+                             September 7, 2016
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+
+ExperimentNumber =
+
+     1
+
+
+N_it =
+
+    16
+
+
+N_children =
+
+    20
+
+  Name        Size            Bytes  Class    Attributes
+
+  shapes      1x1               202  cell               
+
+Starting parallel pool (parpool) using the 'local' profile ... 
+Load config file...
+
+file_name =
+
+../data/Room20.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Room20.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Room20.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Room20.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Room19.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Room19.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Room19.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Room19.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Room18.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Room18.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Room18.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Room18.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Room17.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Room17.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Room17.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Room17.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+Simulation done.
+Load config file...
+
+file_name =
+
+../data/Room16.png
+
+
+filebar =
+
+config1_1_build.png
+
+
+file_name =
+
+../data/Room16.png
+
+
+config_file =
+
+../data/config1.conf
+
+
+file_name =
+
+../data/Room16.png
+
+
+filebar =
+
+config1_2_build.png
+
+
+file_name =
+
+../data/Room16.png
+
+
+config_file =
+
+../data/config1.conf
+
+Init escape routes...
+Init wall forces...
+Init agents...
+Init plots...
+Start simulation...
+{Operation terminated by user during
+simulate>@(agent)agent.v*[lerp2(data.floor(fi).img_dir_x,agent.p(1),agent.p(2)),lerp2(data.floor(fi).img_dir_y,agent.p(1),agent.p(2))]'/agent.v0
+(line 62)
+
+
+In simulate (line 61)
+         effic = arrayfun(@(agent) agent.v*...
+
+In parallel_function (line 474)
+            consume(base, limit, F(base, limit));
+
+In A_LearningAlgorithm (line 39)
+    parfor child = 1:N_children
+} 
+
+>> 
