@@ -23,3 +23,10 @@ eps2avi.sh in this folder to generate a video in the folder ../videos (run
 - data format:
  all internal data is stored in pixels not in meters
 
+
+## Cluster running:
+- clone from the cluster branch
+- load matlab module: module load new matlab/9.1
+- use matlab function compileC.m to compile C files(the file is modified to suit the cluster environment)
+- specify the parameters in the script: parameters in for loop mean the experiment number, while we take N_it and N_children to be 16 and 12 by default 
+- the output for experiment number i is in the directory ../data/ExperimentNumber$i. Best image is stored in best_img_(N_it)_(N_children).mat while the fitness value over iterations is stored in fitness_history.mat.
