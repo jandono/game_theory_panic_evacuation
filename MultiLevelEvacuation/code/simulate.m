@@ -44,10 +44,10 @@ while (data.time < data.duration)
         plotAgentsPerFloor(data, floor);
         plotFloor(data, floor);
     end
-    if data.save_frames==1
-        print('-depsc2',sprintf('frames/%s_%04i.eps', ...
-            data.frame_basename,frame), data.figure_floors);
-    end
+%     if data.save_frames==1
+%         print('-depsc2',sprintf('frames/%s_%04i.eps', ...
+%             data.frame_basename,frame), data.figure_floors);
+%     end
     
     set(0,'CurrentFigure',data.figure_exit);
     plotExitedAgents(data);
@@ -86,7 +86,7 @@ while (data.time < data.duration)
     
     telapsed = toc(tstart);
     pause(max(data.dt - telapsed, 0.01));
-    fprintf('Frame %i done (took %.3fs; %.3fs out of %.3gs simulated).\n', frame, telapsed, data.time, data.duration);
+    %fprintf('Frame %i done (took %.3fs; %.3fs out of %.3gs simulated).\n', frame, telapsed, data.time, data.duration);
     frame = frame + 1;
     
     %data

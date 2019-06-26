@@ -5,14 +5,13 @@ function pixel_LearningAlgorithm(N_it,N_children)
 % Initialize Parents
 % 1 Set the initial conditions for everybody
 directory=strcat('../data/it',num2str(N_it),'child',num2str(N_children),'/');
-mkdir(directory)
 filename = '../data/config2_build.png';
 % filename_original_picture = filename;
 % shapes = {'../data/shape.conf','../data/shape2.conf','../data/shape3.conf'};
 % [geom,room_k] = read_objects(shapes,filename);
 room=imread(filename);
 
-%imshow(room)
+imshow(room)
 room=room(1:2:end,1:2:end,:);
 for k=1:N_children
     filename = strcat(directory,'Room',num2str(k),'.png');
@@ -30,7 +29,7 @@ geom.triangles
 %}
 ObjectArrays={};
 for child = 1:N_children
-        filename = strcat(directory,'Room',num2str(child),'.png');
+        filename = strcat('../data/Room',num2str(child),'.png');
         room=imread(filename);
         %imshow(room_picture)
         ObjectArrays{end+1}=extractShape(room);
@@ -43,19 +42,19 @@ for it=1:N_it
     % Find a way to access measured velocities of the agents and returns it to
     %  fitness vector (-> simulate ~line 43)
     fitness = zeros(1,N_children);
-    %imshow(filename)
-    for child = 1:N_children
+    imshow(filename)
+    parfor child = 1:N_children
         %filename = strcat('../data/Room',num2str(child),'.png');
-        room=imread(strcat(directory,'Room',num2str(child),'.png'));
+        room=imread(strcat('../data/Room',num2str(child),'.png'));
         %imshow(room_picture)
         %imwrite(room_picture,'../data/config1_1_build.png');
 
-        fitness_child = simulate(config_file,strcat(directory,'Room',num2str(child),'.png'));
+        fitness_child = simulate(config_file,strcat('../data/Room',num2str(child),'.png'));
         fitness(child) = fitness_child;
     end
     
     fitness
-    ObjectArrays=pixel_nextGeneration(fitness,N_children,ObjectArrays,directory);
+    ObjectArrays=pixel_nextGeneration(fitness,N_children,ObjectArrays);
 end
 [value,index]=max(fitness);
 best_img=imread(strcat(directory,'Room',num2str(index),'.png'));

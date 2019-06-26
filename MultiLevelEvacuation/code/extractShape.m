@@ -35,6 +35,11 @@ function ObjectArray=extractShape(img_build)
         end
         %size(margin)
         %size(pixels)
+%                 for j=1:length(pixels)
+%                      if(~isempty(find(img_build(pixels(j,1),pixels(j,2),1:3)~=0,1)))
+%                          "error"
+%                      end
+%                 end
         ObjectArray.pixel_array{end+1}=pixels;
         ObjectArray.margin_array{end+1}=margin;
     end
