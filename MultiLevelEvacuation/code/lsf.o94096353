@@ -1,0 +1,69 @@
+Sender: LSF System <lsfadmin@eu-c7-049-08>
+Subject: Job 94096353: <matlab -nodisplay -singleCompThread -r A_LearningAlgorithm\(0,16,12\)> in cluster <euler> Exited
+
+Job <matlab -nodisplay -singleCompThread -r A_LearningAlgorithm\(0,16,12\)> was submitted from host <eu-login-15-ng> by user <jding> in cluster <euler> at Wed Jun 26 18:05:49 2019
+Job was executed on host(s) <12*eu-c7-049-08>, in queue <normal.4h>, as user <jding> in cluster <euler> at Wed Jun 26 18:05:55 2019
+</cluster/home/jding> was used as the home directory.
+</cluster/home/jding/MultiLevelEvacuation/code> was used as the working directory.
+Started at Wed Jun 26 18:05:55 2019
+Terminated at Wed Jun 26 18:06:07 2019
+Results reported at Wed Jun 26 18:06:07 2019
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+matlab -nodisplay -singleCompThread -r A_LearningAlgorithm\(0,16,12\)
+------------------------------------------------------------
+
+TERM_OWNER: job killed by owner.
+Exited with exit code 143.
+
+Resource usage summary:
+
+    CPU time :                                   8.78 sec.
+    Max Memory :                                 469 MB
+    Average Memory :                             203.00 MB
+    Total Requested Memory :                     6144.00 MB
+    Delta Memory :                               5675.00 MB
+    Max Swap :                                   -
+    Max Processes :                              3
+    Max Threads :                                25
+    Run time :                                   42 sec.
+    Turnaround time :                            18 sec.
+
+The output (if any) follows:
+
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2016 The MathWorks, Inc.
+                   R2016b (9.1.0.441655) 64-bit (glnxa64)
+                             September 7, 2016
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+
+ExperimentNumber =
+
+     0
+
+
+N_it =
+
+    16
+
+
+N_children =
+
+    12
+
+
+directory =
+
+../data/Experiment0/
+
+[Warning: Directory already exists.] 
+[> In A_LearningAlgorithm (line 14)] 
+Terminated

@@ -11,16 +11,16 @@ N_it
 N_children
 directory=strcat('../data/Experiment',num2str(ExperimentNumber),'/');
 directory
-mkdir(directory)
+mkdir(directory);
 %shapes = {'../data/shape.conf','../data/shape2.conf','../data/shape3.conf'};
 shapes = getShapePaths(ExperimentNumber);
-whos shapes
+
 [geom,room_k] = read_objects(shapes,filename);
 for k=1:N_children
     filename = strcat(directory,'Room',num2str(k),'.png');
     imwrite(room_k,filename);
     obj_filename = strcat(directory,'Geom',num2str(k),'.mat');
-    save(obj_filename,'geom')
+    save(obj_filename,'geom');
 end
 
 %{
@@ -43,7 +43,7 @@ for it=1:N_it
         filename = strcat(directory,'Room',num2str(child),'.png');
         %room_picture = imread(filename);
         %imwrite(room_picture,'../data/config1_1_build.png');
-        fitness_child = simulate(0,filename)
+        fitness_child = simulate(0,filename);
         fitness(child) = fitness_child;
     end
     
@@ -56,7 +56,7 @@ for it=1:N_it
     end
     %}
     
-    A_nextGeneration(fitness,N_children,filename_original_picture,directory)
+    A_nextGeneration(fitness,N_children,filename_original_picture,directory);
 end;
 
 
