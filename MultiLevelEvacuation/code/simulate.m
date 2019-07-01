@@ -55,19 +55,10 @@ while (data.time < data.duration)
     
     %% WE CHANGED THIS
     % print mean/median velocity of agents on each floor
-     for fi = 1:data.floor_count
-         % calculate the efficiency metric at this specific timestep
-         effic = arrayfun(@(agent) agent.v*...
-         [lerp2(data.floor(fi).img_dir_x, agent.p(1), agent.p(2)) lerp2(data.floor(fi).img_dir_y, agent.p(1), agent.p(2))]'/agent.v0...
-         , data.floor(fi).agents);
-           % we need to average the efficiency over time finally.
-         avg_effic = avg_effic + mean(effic); 
-     end
-     timesteps = timesteps + 1;
      
     
 
-    if (data.time + data.dt > data.duration)
+if (data.time + data.dt > data.durati n)
         data.dt = data.duration - data.time;
         data.time = data.duration;
     else
@@ -83,7 +74,16 @@ while (data.time < data.duration)
         break;
     end
     
+     for fi = 1:data.floor_count
+         % calculate the efficiency metric at this specific timestep
+         effic = arrayfun(@(agent) agent.v*...
+         [lerp2(data.floor(fi).img_dir_x, agent.p(1), agent.p(2)) lerp2(data.floor(fi).img_dir_y, agent.p(1), agent.p(2))]'/agent.v0...
+	 , data.fl or(fi).agents);
+           % we need to average the efficiency over time finally.
+         avg_effic = avg_effic + mean(effic); 
     
+     end
+     timesteps = timesteps + 1;
     telapsed = toc(tstart);
     pause(max(data.dt - telapsed, 0.01));
     %fprintf('Frame %i done (took %.3fs; %.3fs out of %.3gs simulated).\n', frame, telapsed, data.time, data.duration);

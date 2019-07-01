@@ -59,5 +59,5 @@ for it=1:N_it
 end
 [value,index]=max(fitness);
 best_img=imread(strcat(directory,'Room',num2str(index),'.png'));
-save(strcat(directory,'fitness_history_',num2str(ExperimentNumber),'_',num2str(N_it),'_',num2str(N_children),'.mat'),'fitness_history');
-save(strcat(directory,'best_image_',num2str(ExperimentNumber),'_',num2str(N_it),'_',num2str(N_children),'.mat'),'best_img');
+save(strcat(directory,'fitness_history_',num2str(N_it),'_',num2str(N_children),'.mat'),'fitness_history');
+save(strcat(directory,'best_image_',num2str(N_it),'_',num2str(N_children),'.mat'),'best_img');
