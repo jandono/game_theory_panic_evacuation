@@ -2,12 +2,14 @@
 
 #include <math.h>
 
-#define INTERIOR(i, j)  (boundary[(i) + m*(j)] == 0)
+#define INTERIOR(i, j)  (boundary[(i) + m*(j)] == 0) // if a pixel is space (not wall or exit)
 
 #define DIST(i, j)  dist[(i) + m*(j)]
 #define XGRAD(i, j) xgrad[(i) + m*(j)]
 #define YGRAD(i, j) ygrad[(i) + m*(j)]
 
+// PRE: space(0)-wall(1)-exit(-1) matrix and matrix of distances to exit
+// POST: normalized x gradient matrix and y gradient matrix
 void mexFunction(int nlhs, mxArray *plhs[], int nrhs, const mxArray *prhs[])
 {
     double *xgrad, *ygrad, *boundary, *dist;
@@ -33,16 +35,16 @@ void mexFunction(int nlhs, mxArray *plhs[], int nrhs, const mxArray *prhs[])
         mexErrMsgTxt("Boundary field needs to be a full double precision matrix.");
     
     boundary = mxGetPr(prhs[0]);
-    m = mxGetM(prhs[0]);
-    n = mxGetN(prhs[0]);
+    m = mxGetM(prhs[0]); // number of rows
+    n = mxGetN(prhs[0]); // number of columns
     
     /* Get distance field */
     if (!mxIsDouble(prhs[1]) || mxIsClass(prhs[1], "sparse") || mxGetM(prhs[1]) != m || mxGetN(prhs[1]) != n)
         mexErrMsgTxt("Distance field needs to be a full double precision matrix with same dimension as the boundary.");
     
     dist = mxGetPr(prhs[1]);
-    m = mxGetM(prhs[1]);
-    n = mxGetN(prhs[1]);
+    m = mxGetM(prhs[1]); // number of rows
+    n = mxGetN(prhs[1]); // number of columns // why use the same n as above?
     
     
     /* create and init output (gradient) matrices */
@@ -79,19 +81,20 @@ void mexFunction(int nlhs, mxArray *plhs[], int nrhs, const mxArray *prhs[])
                 
                 XGRAD(i, j) = (dxp - dxm) / 2.0;
                 YGRAD(i, j) = (dyp - dym) / 2.0;
-                nrm = sqrt(XGRAD(i, j)*XGRAD(i, j) + YGRAD(i, j)*YGRAD(i, j));
-                if (nrm > 1e-12)
+                nrm = sqrt(XGRAD(i, j)*XGRAD(i, j) + YGRAD(i, j)*YGRAD(i, j)); // length of the gradient vector
+                if (nrm > 1e-12) // don't normalize if gradient is too small
                 {
                     XGRAD(i, j) /= nrm;
                     YGRAD(i, j) /= nrm;
                 }
             }
-            else
+            else // for walls and exits, gradient is zero
             {
                 XGRAD(i, j) = 0.0;
                 YGRAD(i, j) = 0.0;
             }
     
+    /* function of this part unclear but seems not to affect the simulation
     for (j = 0; j < n; ++j)
         for (i = 0; i < m; ++i)
             if (!INTERIOR(i, j))
@@ -130,4 +133,5 @@ void mexFunction(int nlhs, mxArray *plhs[], int nrhs, const mxArray *prhs[])
                     YGRAD(i, j) = yns / nn;
                 }
             }
+     */
 }

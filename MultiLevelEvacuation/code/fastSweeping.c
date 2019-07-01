@@ -57,7 +57,11 @@
 #define UY_BOTH  MIN(UY_LEFT, UY_RIGHT)
 
                                     
-
+// PRE: u: pointer to properly initialized distance matrix
+// boundary: pointer to space(0)-wall(1)-exit(-1) matrix
+// m, n: number of rows and columns of u and boundary
+// err: error (of what?)
+// POST: ???
 static void iteration(double *u, double *boundary, int m, int n, double *err)
 {
     int i, j, ij;
@@ -218,6 +222,10 @@ static void iteration(double *u, double *boundary, int m, int n, double *err)
     *err = MAX(*err, err_loc);
 }
 
+// PRE: matrix containing 0 (space), 1 (wall) and -1 (exit),
+// maximal number of iterations (optional, default = 20),
+// tolerated error (optional, default = 1e-12)
+// POST: matrix of distances (in pixels) to nearest exit 
 void mexFunction(int nlhs, mxArray *plhs[], int nrhs, const mxArray *prhs[])
 {
     double *u, *boundary;
@@ -243,8 +251,8 @@ void mexFunction(int nlhs, mxArray *plhs[], int nrhs, const mxArray *prhs[])
         mexErrMsgTxt("Boundary field needs to be a full double precision matrix.");
     
     boundary = mxGetPr(prhs[0]);
-    m = mxGetM(prhs[0]);
-    n = mxGetN(prhs[0]);
+    m = mxGetM(prhs[0]); // number of rows
+    n = mxGetN(prhs[0]); // number of columns
     entries = m * n;
     
     /* Get max iterations  */
@@ -273,11 +281,12 @@ void mexFunction(int nlhs, mxArray *plhs[], int nrhs, const mxArray *prhs[])
         
     
     /* create and init output (distance) matrix */
-    plhs[0] = mxCreateDoubleMatrix(m, n, mxREAL);
-    u = mxGetPr(plhs[0]);
+    plhs[0] = mxCreateDoubleMatrix(m, n, mxREAL); // output matrix
+    u = mxGetPr(plhs[0]); // pointer to output matrix
     
+    // naive case: exit has zero distance to exit; all other positions start with infinite distance
     for (i = 0; i < entries; ++i)
-        u[i] = boundary[i] < 0.0 ? 0.0 : 1.0e10;
+        u[i] = boundary[i] < 0.0 ? 0.0 : 1.0e10; 
         
     err = 0.0;
     i = 0;
